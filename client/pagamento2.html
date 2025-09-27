@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Endereço</title>
+    <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100"></a>
+    
+        <nav>
+            <p><a href="../index.html">Página Inicial</a></p>
+            <p><a href="perfil.html">Seu perfil</a></p>
+            <p><a href="carrinho-mercadoria.html">Minhas compras</a></p>
+        </nav>
+    </header>
+
+    <hr>
+
+    <center>
+        <h2>Adicionar Endereço</h2>
+
+        <form action="processar_endereco.php" method="post">
+            <label for="pais">País/Região:</label><br>
+            <input type="text" id="pais" name="pais" required><br><br>
+
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="sobrenome">Sobrenome:</label><br>
+            <input type="text" id="sobrenome" name="sobrenome" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+
+            <label for="cep">CEP:</label><br>
+            <input type="text" id="cep" name="cep" required><br><br>
+
+            <label for="endereco">Endereço:</label><br>
+            <input type="text" id="endereco" name="endereco" required><br><br>
+
+            <label for="numero">Número da residência:</label><br>
+            <input type="text" id="numero" name="numero" required><br><br>
+
+            <label for="bairro">Bairro:</label><br>
+            <input type="text" id="bairro" name="bairro" required><br><br>
+
+            <label for="cidade">Cidade:</label><br>
+            <input type="text" id="cidade" name="cidade" required><br><br>
+
+            <button type="submit">Salvar Endereço</button>
+        </form>
+
+        <br><br>
+        <a href="segunda.html"> Formas de Pagamento</a>
+    </center>
+
+    <hr>
+
+    <footer>
+        <nav>
+            <p><a href="../index.html">Página Inicial</a></p>
+        </nav>
+        <nav>
+            <p><a href="termos_condicoes.html">Termos e condições</a></p>
+        </nav>
+        <nav>
+            <p><a href="contato.html" target="_blank">Contato</a></p>
+        </nav>
+        <nav>
+            <p><a href="sobre.html" target="_blank">Sobre</a></p>
+        </nav>
+        <nav>
+            <p><a href="suporte.html" target="_blank">Suporte</a></p>
+        </nav>
+
+        <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+    </footer>
+
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>

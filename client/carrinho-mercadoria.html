@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon">
+    <title>Carrinho de Compras - MacEstampas</title>
+  </head>
+  <body>
+    <header>
+        <a href="../index.html"><img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100"></a>
+    
+        <nav>
+            <p><a href="../index.html">Página Inicial</a></p>
+            <p><a href="login.html" target="_blank">Entre</a></p>
+            <p><a href="crie-sua-conta.html">Crie a sua conta</a></p> 
+            <p><a href="perfil.html">Seu perfil</a></p>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+      <h2>Carrinho de Compras</h2>
+      <!--EXEMPLO-->
+      <p>Seu carrinho está vazio.</p>
+      <a href="index.html">Voltar para a loja</a>
+      <h2>Produtos no Carrinho</h2>
+      <table border="0">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Produto 1</td>
+            <td>R$ 50,00</td>
+            <td>1</td>
+            <td>R$ 50,00</td>
+          </tr>
+          <tr>
+            <td>Produto 2</td>
+            <td>R$ 30,00</td>
+            <td>2</td>
+            <td>R$ 60,00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Total Geral</td>
+            <td>R$ 110,00</td>
+          </tr>
+        </tfoot>
+      </table>
+      <form action="finalizar.html" method="post">
+        <input type="submit" value="Finalizar Compra" />
+      </form>
+      <section>
+        <h2>Informações de Entrega</h2>
+        <form action="processar_entrega.html" method="post">
+          <legend>Endereço</legend>
+          <fieldset>
+            <label for="endereco">Rua / Avenida:</label>
+            <input
+              type="text"
+              id="endereco"
+              name="endereco"
+              required
+            /><br /><br />
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required /><br /><br />
+            <label for="cep">CEP:</label>
+            <input
+              type="text"
+              id="cep"
+              name="cep"
+              required
+              placeholder="00000-000"
+            /><br /><br />
+            <input type="submit" value="Salvar Informações de Entrega" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <br>
+    <hr>
+
+    <footer>
+      <nav>
+            <p><a href="../index.html">Página Inicial</a></p>
+        </nav>
+      <nav>
+          <p><a href="termos_condicoes.html">Termos e condições</a></p>
+      </nav>
+      <nav>
+          <p><a href="contato.html" target="_blank">Contato</a></p>
+      </nav>
+      <nav>
+          <p><a href="sobre.html" target="_blank">Sobre</a></p>
+      </nav>
+      <nav>
+            <p><a href="suporte.html" target="_blank">Suporte</a></p>
+      </nav>
+
+      <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+    </footer>
+
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </body>
+</html>
