@@ -7,32 +7,36 @@
   <title>Crie sua conta - MacEstampas</title>
 </head>
 <body>
-  <header>
+    <header>
     <a href="../index.html"><img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100"></a>
   </header>
     <main>
-        <h2>Crie sua conta</h2>
-        
-        <form action="success.html" method="GET" autocomplete="on" novalidate>
-        <label for="email">Insira seu e-mail</label><br>
-        <input id="email" name="email" type="email" placeholder="Seu@email.com" required><br><br>
+        <section>
+            <h2>Crie sua conta</h2>
+            
+            <form action="success.html" method="GET" autocomplete="on" novalidate>
+            
+                <fieldset>
+                    <legend>Dados de Cadastro</legend>
+                    <label for="email">Insira seu e-mail</label><br>
+                    <input id="email" name="email" type="email" placeholder="Seu@email.com" required><br><br>
+                    <label for="password">Insira sua senha</label><br>
+                    
+                    <input id="password" name="password" type="password" placeholder="Senha" required><br><br>
+                    <label for="password">Insira sua senha novamente</label><br>
+                    
+                    <input id="password" name="password" type="password" placeholder="Senha" required><br><br>
+                    <label>
+                        <input type="checkbox" name="remember" aria-label="Lembrar-me"> Lembrar-me
+                    </label>
+                </fieldset>
 
-        <label for="password">Insira sua senha</label><br>
-        
-        <input id="password" name="password" type="password" placeholder="Senha" required><br><br>
+                <span><p><a href="login.html">Acesse sua conta</a></p></span>
+                <br>
 
-        <label for="password">Insira sua senha novamente</label><br>
-        
-        <input id="password" name="password" type="password" placeholder="Senha" required><br><br>
-
-        <label>
-            <input type="checkbox" name="remember" aria-label="Lembrar-me"> Lembrar-me
-        </label>
-        <span><p><a href="login.html">Acesse sua conta</a></p></span>
-        <br>
-
-        <button type="submit">Criar sua conta</button>
-        </form>
+                <button type="submit">Criar sua conta</button>
+            </form>
+        </section>
     </main>
 
     <hr>

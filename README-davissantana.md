@@ -22,6 +22,7 @@ O projeto é organizado com a página principal (`index.html`) e uma pasta dedic
 | :--- | :--- |
 | `index.html` | Página inicial e vitrine de produtos. |
 | `client/` | Pasta contendo todas as páginas internas. |
+| `client/acessibilidade.html` | Página sobre a importância da Acessibilidade em nosso site. |
 | `client/carrinho-mercadoria.html` | Página do carrinho de compras com resumo e formulário de entrega. |
 | `client/contato.html` | Formulário de contato e informações de localização. |
 | `client/crie-sua-conta.html` | Formulário para registro de novo usuário. |
@@ -33,6 +34,7 @@ O projeto é organizado com a página principal (`index.html`) e uma pasta dedic
 | `client/sobre.html` | Informações sobre a empresa (Missão, História e Equipe). |
 | `client/suporte.html` | Central de Suporte e FAQ. |
 | `client/termos_condicoes.html` | Documento de Termos e Condições de Uso. |
+| `client/descricao_produtos/` | Pasta contendo todas as páginas de descrição de produtos. |
 | `img/` | (Diretório) Onde estão armazenadas a logomarca e as fotos dos produtos. |
 | `assets/` | Diretório para recursos estáticos, como imagens, ícones, fontes e outros arquivos de mídia. |
 | `css/` | Diretório que armazena todas as folhas de estilo (CSS) do projeto. |
@@ -40,6 +42,8 @@ O projeto é organizado com a página principal (`index.html`) e uma pasta dedic
 | `js/` | Diretório que armazena todos os scripts JavaScript. |
 | `js/main.js` | Arquivo principal de scripts JavaScript, usado para interatividade e lógica de front-end. |
 | `docs/` | Diretório para documentação do projeto, manuais, guias ou especificações técnicas. |
+| `docs/Documentação - Orçamento.docx` | Documento simulando uma hospedagem para nosso site. |
+| `docs/MacEstampas - Diário de Bordo` | Documentação sobre nossos passos dia após dia, documentando nossas dúvidas e alterações de acordo com os commits. |
 
 
 ## ♿ Acessibilidade e VLibras
