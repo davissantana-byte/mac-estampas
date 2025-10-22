@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.cabecalho > img {
+    margin: 20px;
+}
+
+.menu {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(6, 2fr);
+    text-align: center;
+    margin-left: 140px;
+    height: 100px;
+    margin-top: -125px;
+    justify-content: center;
+}
+
+.menu > div {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.menu div p a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
+
+.menu div p a:hover {
+    border-bottom: 2px solid;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Lato', 'Roboto', 'Open Sans';
+}
+
