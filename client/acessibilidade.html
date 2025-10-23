@@ -8,14 +8,22 @@
     <link rel="stylesheet" href="../css/acessibilidade.css">
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
         <a href="../index.html"><img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100"></a>
     
-        <nav>
-            <p><a href="../index.html">Página Inicial</a></p>
-            <p><a href="login.html" target="_blank">Entre</a></p>
-            <p><a href="crie-sua-conta.html">Crie a sua conta</a></p> 
-            <p><a href="perfil.html">Seu perfil</a></p>
+        <nav class="menu">
+            <div>
+                <p><a href="../index.html">Página Inicial</a></p>
+            </div>
+            <div>
+                <p><a href="login.html" target="_blank">Entre</a></p>
+            </div>
+            <div>
+                <p><a href="crie-sua-conta.html">Crie a sua conta</a></p> 
+            </div>
+            <div>
+                <p><a href="perfil.html">Seu perfil</a></p>
+            </div>
         </nav>
     </header>
 
@@ -32,50 +40,61 @@
             </figcaption>
         </figure>
 
-        <section>
-            <h2>Acessibilidade digital em nosso site - MacEstampas</h2>
-            <p>Nós acreditamos que a internet deve ser um lugar acessível para todos. Por isso, estamos totalmente comprometidos em garantir que nosso site possa ser usado e navegado com sucesso por qualquer pessoa, independentemente de suas habilidades ou das tecnologias de assistência que utilizem.</p>
-            <p>Nossa meta é seguir as <strong>Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.1</strong>, Nível AA, reconhecidas internacionalmente. A acessibilidade não é apenas um recurso; é um pilar fundamental do nosso desenvolvimento.</p>
-        </section>
+        <div class="conteudos-principais">
+            <section class="acessibilidade1">
+                <h2>Acessibilidade digital em nosso site - MacEstampas</h2>
+                <p>Nós acreditamos que a internet deve ser um lugar acessível para todos. Por isso, estamos totalmente comprometidos em garantir que nosso site possa ser usado e navegado com sucesso por qualquer pessoa, independentemente de suas habilidades ou das tecnologias de assistência que utilizem.</p>
+                <p>Nossa meta é seguir as <strong>Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.1</strong>, Nível AA, reconhecidas internacionalmente. A acessibilidade não é apenas um recurso; é um pilar fundamental do nosso desenvolvimento.</p>
+            </section>
+            <section class="acessibilidade2">
+                <h2>Como Garantimos a Acessibilidade em Nosso Site</h2>
+                <p>Para alcançar nosso compromisso, implementamos uma série de práticas e recursos essenciais:</p>
+                <ol>
+                    <li><strong>Compatibilidade com Leitores de Tela:</strong> Todo o conteúdo do nosso site foi desenvolvido com a semântica correta (uso de <i>tags</i> HTML apropriadas) para ser compreendido e lido por softwares como NVDA, VoiceOver e Jaws.</li>
+                    <li><strong>Navegação por Teclado:</strong> É possível navegar por todas as páginas, menus e formulários do nosso site utilizando apenas o teclado (usando as teclas Tab, Enter, Espaço, etc.), sem a necessidade de um mouse.</li>
+                    <li><strong>Textos Alternativos (Alt Text) nas Imagens:</strong> Todas as imagens que transmitem informações importantes possuem descrições concisas e precisas, permitindo que usuários com deficiência visual compreendam o contexto visual.</li>
+                    <li><strong>Design Responsivo:</strong> Nosso design se adapta a diferentes tamanhos de tela e dispositivos (celulares, tablets e desktops), mantendo a usabilidade e a legibilidade em qualquer formato.</li>
+                    <li><strong>Legendas e Transcrições:</strong> Para conteúdos multimídia (vídeos e áudios), disponibilizamos legendas sincronizadas e, sempre que possível, transcrições completas do conteúdo.</li>
+                </ol>
+            </section>
+        </div>
 
-        <section>
-            <h2>Como Garantimos a Acessibilidade em Nosso Site</h2>
-            <p>Para alcançar nosso compromisso, implementamos uma série de práticas e recursos essenciais:</p>
-            <ol>
-                <li><strong>Compatibilidade com Leitores de Tela:</strong> Todo o conteúdo do nosso site foi desenvolvido com a semântica correta (uso de <i>tags</i> HTML apropriadas) para ser compreendido e lido por softwares como NVDA, VoiceOver e Jaws.</li>
-                <li><strong>Navegação por Teclado:</strong> É possível navegar por todas as páginas, menus e formulários do nosso site utilizando apenas o teclado (usando as teclas Tab, Enter, Espaço, etc.), sem a necessidade de um mouse.</li>
-                <li><strong>Textos Alternativos (Alt Text) nas Imagens:</strong> Todas as imagens que transmitem informações importantes possuem descrições concisas e precisas, permitindo que usuários com deficiência visual compreendam o contexto visual.</li>
-                <li><strong>Design Responsivo:</strong> Nosso design se adapta a diferentes tamanhos de tela e dispositivos (celulares, tablets e desktops), mantendo a usabilidade e a legibilidade em qualquer formato.</li>
-                <li><strong>Legendas e Transcrições:</strong> Para conteúdos multimídia (vídeos e áudios), disponibilizamos legendas sincronizadas e, sempre que possível, transcrições completas do conteúdo.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>O que Fazer se Encontrar um Obstáculo?</h2>
-            <p>Estamos em um processo de melhoria contínua. Apesar dos nossos esforços, sabemos que podem surgir barreiras.</p>
-            <p>Se você tiver dificuldades para acessar qualquer parte do nosso site, ou identificar algum recurso que não está funcionando corretamente com a sua tecnologia de assistência, por favor, <strong>entre em contato imediamente conosco.</strong></p>
-        </section>
+        <div class="conteudo-secundario">
+            <section class="obstaculo">
+                <h2>O que Fazer se Encontrar um Obstáculo?</h2>
+                <p>Estamos em um processo de melhoria contínua. Apesar dos nossos esforços, sabemos que podem surgir barreiras.</p>
+                <p>Se você tiver dificuldades para acessar qualquer parte do nosso site, ou identificar algum recurso que não está funcionando corretamente com a sua tecnologia de assistência, por favor, <strong>entre em contato imediamente conosco.</strong></p>
+            </section>
+        </div>
         <hr>
     </main>
 
     <footer>
-      <nav>
-        <p><a href="../index.html">Página Inicial</a></p>
-        </nav>
-      <nav>
-          <p><a href="contato.html" target="_blank">Contato</a></p>
-      </nav>
-      <nav>
-          <p><a href="sobre.html" target="_blank">Sobre</a></p>
-      </nav>
-      <nav>
-            <p><a href="termos_condicoes.html" target="_blank">Termos e Condições</a></p>
-      </nav>
-      <nav>
-            <p><a href="suporte.html" target="_blank">Suporte</a></p>
-      </nav>
+      <div class="principais">
+          <nav>
+            <p><a href="../index.html">Página Inicial</a></p>
+            </nav>
+          <nav>
+              <p><a href="contato.html" target="_blank">Contato</a></p>
+          </nav>
+          <nav>
+              <p><a href="sobre.html" target="_blank">Sobre</a></p>
+          </nav>
+          <nav>
+                <p><a href="termos_condicoes.html" target="_blank">Termos e Condições</a></p>
+          </nav>
+          <nav>
+                <p><a href="suporte.html" target="_blank">Suporte</a></p>
+          </nav>
+      </div>
 
-      <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+        <div class="outros">
+            <address>
+                Para dúvidas ou contato, visite nossa <a href="client/contato.html">página de contato</a>.
+            </address>
+            
+                  <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <div vw class="enabled">
