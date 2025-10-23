@@ -2,13 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
 header a img {
     margin: 20px;
 }
-
-
 
 .menu {
     display: grid;
@@ -21,14 +17,10 @@ header a img {
     justify-content: center;
 }
 
-
-
 .menu > div {
     text-align: center;
     padding-top: 20px;
 }
-
-
 
 .menu div p a {
     text-decoration: none;
@@ -37,13 +29,9 @@ header a img {
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
 
-
-
 .menu div p a:hover {
     border-bottom: 2px solid;
 }
-
-
 
 .principais {
     display: grid;
@@ -53,13 +41,9 @@ header a img {
     margin-bottom: 50px;
 }
 
-
-
 .principais nav p a:hover {
     border-bottom: 2px solid;
 }
-
-
 
 footer .principais nav {
     text-decoration: none;
@@ -68,34 +52,24 @@ footer .principais nav {
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
 
-
-
 nav p a {
     text-decoration: none;
     color: black;
 }
-
-
 
 .outros {
     text-align: center;
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
 
-
-
 h1, figure {
     text-align: center;
     font-family: 'Lato', 'Roboto', 'Open Sans';
 }
 
-
-
 figure figcaption small {
     font-size: 7px;
 }
-
-
 
 .conteudos-principais {
     display: grid;
@@ -106,8 +80,6 @@ figure figcaption small {
     height: 1500px;
 }
 
-
-
 .acessibilidade1 {
     border: 1px solid;
     border-radius: 20px;
@@ -116,29 +88,15 @@ figure figcaption small {
     height: 550px;
 }
 
-
-
-
-
-
-
 .acessibilidade2 {
     height: 1440px;
     padding: 20px;
 }
 
-
-
 .titulo-lista {
     text-align: center;
     font-size: 22px;
 }
-
-
-
-
-
-
 
 .compatibilidade {
     border: 1px solid;
@@ -152,8 +110,6 @@ figure figcaption small {
     font-size: 20px;
 }
 
-
-
 .navegacao {
     border: 1px solid;
     border-radius: 30px;
@@ -165,8 +121,6 @@ figure figcaption small {
     text-align: center;
     font-size: 20px;
 }
-
-
 
 .alternativo {
     border: 1px solid;
@@ -180,8 +134,6 @@ figure figcaption small {
     font-size: 20px;
 }
 
-
-
 .responsivo {
     border: 1px solid;
     border-radius: 30px;
@@ -193,8 +145,6 @@ figure figcaption small {
     text-align: center;
     font-size: 20px;
 }
-
-
 
 .transcricoes {
     border: 1px solid;
@@ -208,10 +158,6 @@ figure figcaption small {
     font-size: 20px;
 }
 
-
-
-
-
 .conteudo-secundario {
     margin: 20px;
     padding: 20px;
@@ -222,14 +168,10 @@ figure figcaption small {
     font-size: 20px;
 }
 
-
-
 .formulario {
     padding: 10px;
     padding-bottom: 15px;
 }
-
-
 
 .nome {
     text-align: center;
@@ -237,15 +179,11 @@ figure figcaption small {
     font-size: 20px;
 }
 
-
-
 .email {
     text-align: center;
     margin: 40px;
     font-size: 20px;
 }
-
-
 
 .mensagem {
     text-align: center;
@@ -253,21 +191,15 @@ figure figcaption small {
     font-size: 20px;
 }
 
-
-
 .botao {
     text-align: center;
 }
-
-
 
 #nome {
     border-radius: 20px;
     padding: 20px;
     font-size: 15px;
 }
-
-
 
 #email {
     border-radius: 20px;
@@ -276,16 +208,12 @@ figure figcaption small {
     width: 400px;
 }
 
-
-
 #mensagem {
     border-radius: 20px;
     padding: 20px;
     font-size: 15px;
     width: 400px;
 }
-
-
 
 #botao {
     border-radius: 20px;
