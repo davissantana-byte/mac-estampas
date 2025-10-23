@@ -47,14 +47,27 @@
                 <p>Nossa meta é seguir as <strong>Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.1</strong>, Nível AA, reconhecidas internacionalmente. A acessibilidade não é apenas um recurso; é um pilar fundamental do nosso desenvolvimento.</p>
             </section>
             <section class="acessibilidade2">
-                <h2>Como Garantimos a Acessibilidade em Nosso Site</h2>
-                <p>Para alcançar nosso compromisso, implementamos uma série de práticas e recursos essenciais:</p>
+                <div class="titulo-lista">
+                    <h2>Como Garantimos a Acessibilidade em Nosso Site</h2>
+                    <p>Para alcançar nosso compromisso, implementamos uma série de práticas e recursos essenciais:</p>
+                    <br>
+                </div>
                 <ol>
-                    <li><strong>Compatibilidade com Leitores de Tela:</strong> Todo o conteúdo do nosso site foi desenvolvido com a semântica correta (uso de <i>tags</i> HTML apropriadas) para ser compreendido e lido por softwares como NVDA, VoiceOver e Jaws.</li>
-                    <li><strong>Navegação por Teclado:</strong> É possível navegar por todas as páginas, menus e formulários do nosso site utilizando apenas o teclado (usando as teclas Tab, Enter, Espaço, etc.), sem a necessidade de um mouse.</li>
-                    <li><strong>Textos Alternativos (Alt Text) nas Imagens:</strong> Todas as imagens que transmitem informações importantes possuem descrições concisas e precisas, permitindo que usuários com deficiência visual compreendam o contexto visual.</li>
-                    <li><strong>Design Responsivo:</strong> Nosso design se adapta a diferentes tamanhos de tela e dispositivos (celulares, tablets e desktops), mantendo a usabilidade e a legibilidade em qualquer formato.</li>
-                    <li><strong>Legendas e Transcrições:</strong> Para conteúdos multimídia (vídeos e áudios), disponibilizamos legendas sincronizadas e, sempre que possível, transcrições completas do conteúdo.</li>
+                    <div class="compatibilidade">
+                        <li><strong>Compatibilidade com Leitores de Tela:</strong><br><br> Todo o conteúdo do nosso site foi desenvolvido com a semântica correta (uso de <i>tags</i> HTML apropriadas) para ser compreendido e lido por softwares como NVDA, VoiceOver e Jaws.</li>
+                    </div>
+                    <div class="navegacao">
+                        <li><strong>Navegação por Teclado:</strong><br><br> É possível navegar por todas as páginas, menus e formulários do nosso site utilizando apenas o teclado (usando as teclas Tab, Enter, Espaço, etc.), sem a necessidade de um mouse.</li>
+                    </div>
+                    <div class="alternativo">
+                        <li><strong>Textos Alternativos (Alt Text) nas Imagens:</strong><br><br> Todas as imagens que transmitem informações importantes possuem descrições concisas e precisas, permitindo que usuários com deficiência visual compreendam o contexto visual.</li>
+                    </div>
+                    <div class="responsivo">
+                        <li><strong>Design Responsivo:</strong><br><br> Nosso design se adapta a diferentes tamanhos de tela e dispositivos (celulares, tablets e desktops), mantendo a usabilidade e a legibilidade em qualquer formato.</li>
+                    </div>
+                    <div class="transcricoes">
+                        <li><strong>Legendas e Transcrições:</strong><br><br> Para conteúdos multimídia (vídeos e áudios), disponibilizamos legendas sincronizadas e, sempre que possível, transcrições completas do conteúdo.</li>
+                    </div>
                 </ol>
             </section>
         </div>
@@ -65,7 +78,33 @@
                 <p>Estamos em um processo de melhoria contínua. Apesar dos nossos esforços, sabemos que podem surgir barreiras.</p>
                 <p>Se você tiver dificuldades para acessar qualquer parte do nosso site, ou identificar algum recurso que não está funcionando corretamente com a sua tecnologia de assistência, por favor, <strong>entre em contato imediamente conosco.</strong></p>
             </section>
+
+            <form action="" class="formulario">
+                <div class="nome">
+                    <label for="nome">Nome Completo: </label>
+                    <br><br>
+                    <input type="text" name="nome" id="nome" placeholder="Seu Nome Completo" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email: </label>
+                    <br><br>
+                    <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                
+                <div class="mensagem">
+                    <label for="mensagem">Observação: </label>
+                    <br><br>
+                    <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+                </div>
+
+                <div class="botao">
+                    <button type="submit" id="botao">Enviar Observação</button>
+                </div>
+            </form>
         </div>
+
+        
         <hr>
     </main>
 
@@ -93,7 +132,7 @@
                 Para dúvidas ou contato, visite nossa <a href="client/contato.html">página de contato</a>.
             </address>
             
-                  <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+            <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
         </div>
     </footer>
 
