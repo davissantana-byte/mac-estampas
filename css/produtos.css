@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: #fff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 1 20px;
+}
+
+h1 {
+    text-align: center;
+    color:black;
+    margin-bottom: 30px;
+}
+h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 30px;
+    background-color: #fff;
+    /* Deixa o menu "grudado" no topo ao rolar (fiz com ajuda do gemini, não tava conseguindo kkkkkk)*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px;
+}
+header img {
+    border-radius: 50%;
+}
+header nav {
+    display: flex;
+}
+header nav p {
+    margin: 0 15px;
+}
+header nav p a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent; 
+    transition: color 0.3s, border-bottom 0.3s;
+}
+header nav p a:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
