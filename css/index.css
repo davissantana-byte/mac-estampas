@@ -127,11 +127,14 @@ nav p a {
     100%{transform: translateX(0%)}
 }
 
-.grupo-caneca {
+.galeria-canecas {
     border: 1px solid;
-    border-radius: 40px;
-    margin-left: 30%;
-    padding: 20px;
+    border-radius: 5px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.grupo-caneca {
     display: flex;
     overflow-x: auto;
     cursor: grab;
@@ -146,7 +149,7 @@ nav p a {
 .item-galeria img {
     width: 200px;
     margin: 0 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     border: 1px solid;
     transition: transform 0.3s;
 }
