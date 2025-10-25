@@ -126,3 +126,35 @@ nav p a {
     90%{transform: translateX(0%)}
     100%{transform: translateX(0%)}
 }
+
+.grupo-caneca {
+    border: 1px solid;
+    border-radius: 40px;
+    margin-left: 30%;
+    padding: 20px;
+    display: flex;
+    overflow-x: auto;
+    cursor: grab;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+.grupo-caneca::-webkit-scrollbar {
+    display: none;
+}
+
+.item-galeria img {
+    width: 200px;
+    margin: 0 10px;
+    border-radius: 20px;
+    border: 1px solid;
+    transition: transform 0.3s;
+}
+
+.grupo-caneca img:hover {
+    transform: scale(1.05s);
+}
+
+.item-galeria figcaption {
+    text-align: center;
+}
