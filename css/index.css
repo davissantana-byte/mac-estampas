@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    margin: 0;
+}
+
+
 .cabecalho > img {
     margin: 20px;
 }
@@ -35,6 +40,7 @@
 h1, h2 {
     text-align: center;
     font-family: 'Lato', 'Roboto', 'Open Sans';
+    margin: 30px;
 }
 
 .principais {
@@ -42,7 +48,8 @@ h1, h2 {
     gap: 5px;
     grid-template-columns: repeat(6, 1fr);
     text-align: center;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .principais nav p a:hover {
@@ -64,6 +71,7 @@ nav p a {
 .outros {
     text-align: center;
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+    margin: 30px;
 }
 
 .carrossel-menu {
@@ -128,7 +136,7 @@ nav p a {
 }
 
 .galeria-canecas {
-    border: 1px solid;
+    border: 1px;
     border-radius: 5px;
     width: 1200px;
     margin: 0 auto;
@@ -140,6 +148,7 @@ nav p a {
     cursor: grab;
     scroll-behavior: smooth;
     user-select: none;
+    gap: 30px;
 }
 
 .grupo-caneca::-webkit-scrollbar {
@@ -150,7 +159,7 @@ nav p a {
     width: 200px;
     margin: 0 10px;
     border-radius: 5px;
-    border: 1px solid;
+    border: 1px;
     transition: transform 0.3s;
 }
 
@@ -160,4 +169,142 @@ nav p a {
 
 .item-galeria figcaption {
     text-align: center;
+}
+
+.vantagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 100px;
+}
+
+.vantagens1 {
+    background-color: rgb(189, 222, 233);
+    border-radius: 20px;
+    border: 1px solid;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    padding: 20px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.vantagens1:hover {
+    transform: scale(1.1); 
+}
+
+.galeria-agenda-bloquinho {
+    display: flex;
+    gap: 16px;
+}
+
+.grupo-agenda, .grupo-bloquinho {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex: 1;
+    width: 200px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(../assets/bg-papel1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.galeria-agenda-bloquinho figcaption {
+    font-size: 10px;
+}
+
+.item-agenda img, .item-bloquinho img{
+    width: 250px;
+    border-radius: 5px;
+}
+
+.agenda0 {
+    margin-left: 220px;
+    margin-top: 170px;
+}
+
+.agenda1 {
+    margin-top: 170px;
+}
+
+.agenda2 {
+    margin-top: 80px;
+    margin-left: 220px;
+}
+
+.agenda3 {
+    margin-top: 70px;
+}
+
+.agenda4 {
+    margin-left: 220px;
+    margin-bottom: 100px;
+}
+
+.bloquinho0 {
+    margin-left: 220px;
+    margin-top: 170px;
+}
+
+.bloquinho1 {
+    margin-top: 170px;
+}
+
+.bloquinho2 {
+    margin-left: 220px;
+}
+
+.bloquinho3 {
+    margin-bottom: 400px;
+}
+
+.agenda-bloquinho {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.titulo-categoria {
+    margin: 50px;
+}
+
+.categoria {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.categoria-10 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.categoria-10 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.categoria-10 figure  {
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.categoria-10 figure:hover {
+    transform: scale(1.1);
+}
+.categoria-10 figure * {
+    margin: 0;
+    padding: 0;
 }
