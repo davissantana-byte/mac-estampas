@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    margin: 0;
-}
-
-
 .cabecalho > img {
     margin: 20px;
 }
@@ -197,18 +192,20 @@ nav p a {
 .galeria-agenda-bloquinho {
     display: flex;
     gap: 16px;
+    width: 100%;
 }
 
 .grupo-agenda, .grupo-bloquinho {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     flex: 1;
+    gap: 0;
     width: 200px;
     text-align: center;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    width: 100vw;
+    width: 100vh;
     background-image: url(../assets/bg-papel1.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -307,4 +304,9 @@ nav p a {
 .categoria-10 figure * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
