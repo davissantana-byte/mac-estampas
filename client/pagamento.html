@@ -12,13 +12,13 @@
         <nav>
             <p><a href="../index.html">Página Inicial</a></p>
             <p><a href="perfil.html">Seu perfil</a></p>
-            <p><a href="carrinho-mercadoria.html">Minhas compras</a></p>
+            
         </nav>
     </header>
 
     <h2>Adicionar endereço de entrega ou retirada</h2>
 
-    <form action="pagamento2.html" method="get">
+    <form action="c" method="get">
         <button type="submit">Adicionar um novo endereço de entrega</button>
     </form>
 
@@ -27,6 +27,31 @@
     <form action="local_retirada.html" method="get">
         <input type="submit" value="Encontre um local de retirada nas proximidades">
     </form>
+
+    <br>
+
+    <form action="carrinho-mercadoria.html" method="get">
+        <button type="submit">Voltar ao carrinho</button>
+    </form>
+
+    <br>
+
+<div>
+    <details>
+      <summary>Adicionar um novo endereço de entrega</summary>
+
+     <form action="#" method="post">
+        <label>Nome completo:</label>
+        <input type="text" name="nome" placeholder="Ex: João da Silva" required>
+
+        <label>Telefone:</label>
+        <input type="tel" name="telefone" placeholder="+55 (11) 99999-9999" required>
+
+        <label>CEP:</label>
+        <input type="text" name="cep" placeholder="Ex: 12345-000" required>
+     </form>
+    </details>
+</div>
 
     <hr>
 
