@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Adicionar Endereço</title>
+    <title>Adicionar Endereço - MacEstampas</title>
     <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/pagamento2.css">
 </head>
 <body>
     <header>
@@ -18,43 +19,51 @@
 
     <hr>
 
-    <center>
-        <h2>Adicionar Endereço</h2>
+    <main style="text-align: center;">
+        
+        <section>
+            <h2>Adicionar Endereço</h2>
 
-        <form action="processar_endereco.php" method="post">
-            <label for="pais">País/Região:</label><br>
-            <input type="text" id="pais" name="pais" required><br><br>
+            <form action="processar_endereco.php" method="post">
+                <fieldset>
+                    <legend>Informações de Entrega</legend>
+                    
+                    <label for="pais">País/Região:</label><br>
+                    <input type="text" id="pais" name="pais" required><br><br>
 
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" required><br><br>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
 
-            <label for="sobrenome">Sobrenome:</label><br>
-            <input type="text" id="sobrenome" name="sobrenome" required><br><br>
+                    <label for="sobrenome">Sobrenome:</label><br>
+                    <input type="text" id="sobrenome" name="sobrenome" required><br><br>
 
-            <label for="telefone">Telefone:</label><br>
-            <input type="tel" id="telefone" name="telefone" required><br><br>
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="tel" id="telefone" name="telefone" required><br><br>
 
-            <label for="cep">CEP:</label><br>
-            <input type="text" id="cep" name="cep" required><br><br>
+                    <label for="cep">CEP:</label><br>
+                    <input type="text" id="cep" name="cep" required><br><br>
 
-            <label for="endereco">Endereço:</label><br>
-            <input type="text" id="endereco" name="endereco" required><br><br>
+                    <label for="endereco">Endereço:</label><br>
+                    <input type="text" id="endereco" name="endereco" required><br><br>
 
-            <label for="numero">Número da residência:</label><br>
-            <input type="text" id="numero" name="numero" required><br><br>
+                    <label for="numero">Número da residência:</label><br>
+                    <input type="text" id="numero" name="numero" required><br><br>
 
-            <label for="bairro">Bairro:</label><br>
-            <input type="text" id="bairro" name="bairro" required><br><br>
+                    <label for="bairro">Bairro:</label><br>
+                    <input type="text" id="bairro" name="bairro" required><br><br>
 
-            <label for="cidade">Cidade:</label><br>
-            <input type="text" id="cidade" name="cidade" required><br><br>
+                    <label for="cidade">Cidade:</label><br>
+                    <input type="text" id="cidade" name="cidade" required><br><br>
+                </fieldset>
+                
+                <button type="submit">Salvar Endereço</button>
+            </form>
 
-            <button type="submit">Salvar Endereço</button>
-        </form>
+            <br><br>
+            <p><a href="segunda.html"> Formas de Pagamento</a></p>
+        </section>
 
-        <br><br>
-        <a href="segunda.html"> Formas de Pagamento</a>
-    </center>
+    </main>
 
     <hr>
 
@@ -77,6 +86,10 @@
         <nav>
             <p><a href="acessibilidade.html" target="_blank">Acessibilidade</a></p>
         </nav>
+        
+        <address>
+            Dúvidas sobre o pedido? Acesse <a href="suporte.html">Suporte</a>.
+        </address>
 
         <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
     </footer>
