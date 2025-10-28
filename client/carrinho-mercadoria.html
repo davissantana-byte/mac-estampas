@@ -3,24 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon" />
     <title>Carrinho de Compras - MacEstampas</title>
     <link rel="stylesheet" href="../css/carrinho-mercadoria.css" />
+    <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
       <a href="../index.html">
         <img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100" />
       </a>
-      <!--BARRA DE NAVEGAÇAO AGORA CONTEM CEP-->
+      <details>
+        <summary>Informe seu CEP</summary>
+        <form>
+          <label for="cep">CEP:</label>
+          <input
+            type="text"
+            name="cep"
+            id="cep-header"
+            required
+            placeholder="00000-000"
+            title="Formato: 00000-000"
+            pattern="[0-9]{5}-[0-9]{3}"
+            maxlength="9"
+            inputmode="numeric"
+          />
+          <button type="submit">OK</button>
+        </form>
+      </details>
       <nav aria-label="Navegação principal">
         <ul>
-          <li><a href="#">Informe seu CEP</a></li>
           <li><a href="../index.html">Página Inicial</a></li>
-          <!--COLOCAR NEGOCIO DE CATEGORIA-->
           <li><a href="produtos.html">Categoria</a></li>
           <li><a href="suporte.html">Suporte</a></li>
-          <li><a href="login.html" target="_blank">Entre</a></li>
+          <li><a href="login.html" target="_blank" rel="noopener noreferrer">Entre</a></li>
           <li><a href="crie-sua-conta.html">Crie a sua conta</a></li>
           <li><a href="perfil.html">Seu perfil</a></li>
         </ul>
@@ -29,12 +44,14 @@
     <hr />
     <main>
       <section>
-        <h2>Carrinho de Compras</h2>
-        <!--EXEMPLO: PRECISO ARRUMAR ESSA PARTE-->
-        <h3>Produtos no Carrinho</h3>
+        <h1>Carrinho de Compras</h1>
+        <h2>Produtos no Carrinho</h2>
+        <h3>Itens Selecionados</h3>
         <fieldset>
-          <legend>Itens Selecionados</legend>
-          <table border="0">
+          <table>
+            <caption>
+              Lista de produtos adicionados ao carrinho
+            </caption>
             <thead>
               <tr>
                 <th scope="col">Imagem</th>
@@ -47,15 +64,29 @@
             <tbody>
               <tr>
                 <td>
-                  <img src="../assets/produtos/camiseta1.jpg" alt="Camiseta Exemplo" width="100" />
+                  <img
+                    src="../assets/img/camisas/camisa2.jpeg"
+                    alt="Camiseta Heitor 3 anos"
+                    width="100"
+                  />
                 </td>
-                <td>Camiseta Estampada Exemplo</td>
+                <td>Camisa Heitor 3 anos</td>
                 <td>R$ 139,90</td>
                 <td>
-                  <input type="number" name="quantidade" value="1" min="1" step="1" />
+                  <label for="quant-1">Quantidade:</label>
+                  <input
+                    id="quant-1"
+                    type="number"
+                    name="quantidade[1]"
+                    value="1"
+                    min="1"
+                    step="1"
+                  />
                 </td>
                 <td>
-                  <button type="button" aria-label="Remover Camiseta Exemplo">Remover</button>
+                  <button type="button" aria-label="Remover Camisa Heitor do carrinho">
+                    Remover
+                  </button>
                 </td>
               </tr>
             </tbody>
@@ -75,82 +106,61 @@
             <dt>Total:</dt>
             <dd>R$ 139,90</dd>
           </dl>
-          <article>
-            <form action="finalizar.html" method="post">
-              <input type="submit" value="Finalizar Compra" />
-              <p>Ou</p>
-              <a href="produtos.html">Continuar Comprando</a>
-            </form>
-          </article>
+          <form action="pagamento.html" method="get">
+            <button type="submit">Finalizar Compra</button>
+            <button type="reset">Limpar Carrinho</button>
+            <p>Ou</p>
+            <a href="produtos.html">Continuar Comprando</a>
+          </form>
         </fieldset>
       </aside>
-
-      <!--ARRUMAR-->
       <section>
-        <h2>Informações de Entrega</h2>
+        <h3>Informações de Entrega</h3>
         <form action="processar_entrega.html" method="post">
           <fieldset>
             <legend>Endereço</legend>
-
             <label for="endereco">Rua / Avenida:</label>
-            <input
-              type="text"
-              id="endereco"
-              name="endereco"
-              required
-              aria-required="true"
-            /><br /><br />
-
+            <input type="text" id="endereco" name="endereco" required /><br /><br />
             <label for="cidade">Cidade:</label>
-            <input
-              type="text"
-              id="cidade"
-              name="cidade"
-              required
-              aria-required="true"
-            /><br /><br />
-
+            <input type="text" id="cidade" name="cidade" required /><br /><br />
             <label for="cep">CEP:</label>
             <input
               type="text"
-              id="cep"
+              id="cep-body"
               name="cep"
               required
               placeholder="00000-000"
               title="Formato: 00000-000"
-              pattern="\d{5}-\d{3}"
+              pattern="[0-9]{5}-[0-9]{3}"
               maxlength="9"
               inputmode="numeric"
-              aria-required="true"
             />
-            <small id="cep-format">Formato: 00000-000</small>
-            <br />
-            <br />
-
+            <small>Formato: 00000-000</small><br /><br />
             <input type="submit" value="Salvar Informações de Entrega" />
           </fieldset>
         </form>
       </section>
-      <a href="index.html">Voltar para a loja</a>
+      <a href="../index.html">Voltar para a loja</a>
     </main>
-
-    <br />
     <hr />
-
     <footer>
-      <nav>
+      <nav aria-label="Navegação do rodapé">
         <ul>
           <li><a href="../index.html">Página Inicial</a></li>
           <li><a href="termos_condicoes.html">Termos e condições</a></li>
-          <li><a href="contato.html" target="_blank">Contato</a></li>
-          <li><a href="sobre.html" target="_blank">Sobre</a></li>
-          <li><a href="suporte.html" target="_blank">Suporte</a></li>
-          <li><a href="acessibilidade.html" target="_blank">Acessibilidade</a></li>
+          <li><a href="contato.html" target="_blank" rel="noopener noreferrer">Contato</a></li>
+          <li><a href="sobre.html" target="_blank" rel="noopener noreferrer">Sobre</a></li>
+          <li><a href="suporte.html" target="_blank" rel="noopener noreferrer">Suporte</a></li>
+          <li>
+            <a href="acessibilidade.html" target="_blank" rel="noopener noreferrer"
+              >Acessibilidade</a
+            >
+          </li>
         </ul>
       </nav>
-
       <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
     </footer>
+
     <div vw class="enabled">
       <div vw-access-button class="active"></div>
       <div vw-plugin-wrapper>
