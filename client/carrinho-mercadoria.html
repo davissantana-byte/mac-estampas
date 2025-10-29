@@ -16,9 +16,9 @@
       <details>
         <!--BARRA DE NAVEGAÇÃO-->
         <!--TENTEI FAZER AQUELE POP-VIEW QUE APARECE QUANDO CLICAR NO CEP-->
-        <summary>Informe seu CEP</summary>
-        <form>
-          <label for="cep">CEP:</label>
+        <summary aria-label="Informe seu CEP">Informe seu CEP</summary>
+        <form action="#" method="post">
+          <label for="cep-header">CEP:</label>
           <input
             type="text"
             name="cep"
@@ -70,14 +70,20 @@
                 <td>
                   <img
                     src="../assets/img/camisas/camisa2.jpeg"
-                    alt="Camiseta Heitor 3 anos"
+                    alt="Camiseta Infantil Branca Estampa Personalizada: 'Heitor 3 Anos'"
                     width="100"
                   />
                 </td>
-                <td>Camisa Heitor 3 anos</td>
-                <td>R$ 139,90</td>
                 <td>
-                  <label for="quant-1">Quantidade:</label>
+                  <p>
+                    <small
+                      >Camiseta Infantil Branca Estampa <br />Personalizada: "Heitor 3 Anos"</small
+                    >
+                  </p>
+                </td>
+                <td>R$ 35,00</td>
+                <td>
+                  <label for="quant-1">Qtde:</label>
                   <input
                     id="quant-1"
                     type="number"
@@ -88,7 +94,10 @@
                   />
                 </td>
                 <td>
-                  <button type="button" aria-label="Remover Camisa Heitor do carrinho">
+                  <button
+                    type="button"
+                    aria-label="Remover Camiseta Infantil Branca Estampa Personalizada: Heitor 3 Anos do carrinho"
+                  >
                     Remover
                   </button>
                 </td>
@@ -103,16 +112,16 @@
         <fieldset>
           <dl>
             <dt>Itens:</dt>
-            <dd>3</dd>
+            <dd>2</dd>
             <dt>Subtotal:</dt>
-            <dd>R$ 139,90</dd>
+            <dd>R$ 90,00</dd>
             <dt>Frete:</dt>
             <dd>Grátis</dd>
             <dt>Total:</dt>
-            <dd>R$ 139,90</dd>
+            <dd>R$ 90,00</dd>
           </dl>
-          <form action="pagamento.html" method="get">
-            <button type="submit">Finalizar Compra</button>
+          <form action="pagamento.html" method="post">
+            <button type="button" onclick="location.href='pagamento.html'">Finalizar Compra</button>
             <button type="reset">Limpar Carrinho</button>
             <p>Ou</p>
             <a href="produtos.html">Continuar Comprando</a>
@@ -129,7 +138,7 @@
             <input type="text" id="endereco" name="endereco" required /><br /><br />
             <label for="cidade">Cidade:</label>
             <input type="text" id="cidade" name="cidade" required /><br /><br />
-            <label for="cep">CEP:</label>
+            <label for="cep-body">CEP:</label>
             <input
               type="text"
               id="cep-body"
