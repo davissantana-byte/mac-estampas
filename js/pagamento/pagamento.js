@@ -1,8 +1,10 @@
 function calculaResultado(){
 
-var resultado = document.getElementById("resultado");
-var mensagem = alert("Compra concluída com sucesso!");
-
-resultado.innerHTML = mensagem;
+Swal.fire({
+    title: 'Compra concluida!',
+    text: 'Seu pagamento foi processado com sucesso.',
+    icon: 'sucesso',
+    allowOutsideClick: false,
+})
 
 }
