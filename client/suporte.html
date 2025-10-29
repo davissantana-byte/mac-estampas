@@ -1,102 +1,124 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Central de Suporte - MacEstampas</title>
-  <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../css/suporte.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Central de Suporte ao Cliente | MacEstampas</title>
+    <meta name="description"
+        content="Precisa de ajuda? Fale com o suporte da MacEstampas ou consulte as perguntas frequentes.">
+    <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/suporte.css">
 </head>
+
 <body>
-  <header>
-      <a href="../index.html"><img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100"></a>
-    
-      <nav>
-          <p><a href="../index.html">Página Inicial</a></p>
-          <p><a href="login.html" target="_blank">Entre</a></p>
-          <p><a href="crie-sua-conta.html">Crie a sua conta</a></p> 
-          <p><a href="perfil.html">Seu perfil</a></p>
-          <p><a href="carrinho-mercadoria.html">Minhas compras</a></p>
-      </nav>
-  </header>
+    <header>
+        <a href="../index.html" class="logo">
+            <img src="../assets/icons/logo.jpg" alt="Logo MacEstampas">
+            <span>MacEstampas</span>
+        </a>
 
-  <hr>
-  
-  <main>
-      <h1>Central de Suporte ao Cliente</h1>
-      <p>Precisa de ajuda? Preencha o formulário abaixo ou consulte as perguntas frequentes.</p>
-      
-      <section>
-          <h2>Abrir um chamado</h2>
-          <form>
-              <fieldset>
-                  <legend>Dados para Contato</legend>
-                  
-                  <label for="nome">Nome:</label><br>
-                  <input type="text" id="nome" name="nome" placeholder="Digite seu Nome"><br><br>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-                  <label for="email">E-mail:</label><br>
-                  <input type="email" id="email" name="email" placeholder="Digite o E-mail para contato"><br><br>
+        <nav class="menu">
+            <a href="../index.html">Início</a>
+            <a href="login.html" target="_blank">Entrar</a>
+            <a href="crie-sua-conta.html">Criar Conta</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="carrinho-mercadoria.html">Compras</a>
+        </nav>
+    </header>
 
-                  <label for="assunto">Nos conte seu Problema:</label><br>
-                  <input type="text" id="assunto" name="assunto" placeholder="Escreva seu Problema"><br><br>
+    <hr>
 
-                  <label for="mensagem">Mensagem de Apoio:</label><br>
-                  <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva algo a Mais"></textarea><br><br>
-              </fieldset>
-              
-              <button type="submit">Enviar chamado</button>
-          </form>
-      </section>
+    <main>
+        <h1>Central de Suporte ao Cliente</h1>
+        <p>Precisa de ajuda? Preencha o formulário abaixo ou consulte as perguntas frequentes.</p>
 
-      <section>
-          <h2>Perguntas Frequentes (FAQ)</h2>
-          <details>
-              <summary>Como acompanho meu chamado?</summary>
-              <p>Você receberá um e-mail com um link para acompanhar o status.</p>
-          </details>
+        <section>
+            <h2>Abrir um chamado</h2>
+            <form>
+                <fieldset>
+                    <legend>Dados para Contato</legend>
 
-          <details>
-              <summary>Qual o horário de atendimento?</summary>
-              <p>Nosso atendimento funciona de segunda a sexta, das 19h às 22:50h.</p>
-          </details>
-      </section>
-  </main>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
 
-  <hr>
-  <footer>
-      <nav>
-          <p><a href="../index.html">Página Inicial</a></p>
-      </nav>
-      <nav>
-        <p><a href="contato.html" target="_blank">Contato</a></p>
-      </nav>
-      <nav>
-          <p><a href="termos_condicoes.html" target="_blank">Termos e condições</a></p>
-      </nav>
-      <nav>
-          <p><a href="sobre.html" target="_blank">Sobre</a></p>
-      </nav>
-      <nav>
-          <p><a href="acessibilidade.html" target="_blank">Acessibilidade</a></p>
-      </nav>
-      
-      <address>
-          Para outras dúvidas, acesse nossa <a href="contato.html">Página de Contato</a>.
-      </address>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
 
-      <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
-  </footer>
-  
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
+                    <label for="assunto">Assunto:</label><br>
+                    <input type="text" id="assunto" name="assunto" placeholder="Escreva o assunto" required><br><br>
+
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Descreva seu problema"
+                        required></textarea><br><br>
+                </fieldset>
+
+                <button type="submit">Enviar chamado</button>
+            </form>
+
+        </section>
+
+        <section>
+            <h2>Perguntas Frequentes (FAQ)</h2>
+            <details>
+                <summary>Como acompanho meu chamado?</summary>
+                <p>Você receberá um e-mail com um link para acompanhar o status.</p>
+            </details>
+
+            <details>
+                <summary>Qual o horário de atendimento?</summary>
+                <p>Nosso atendimento funciona de segunda a sexta, das 10h às 18h.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>MacEstampas</h3>
+                <p>Personalize com nossas estampas de qualidade e confiança. Entre em contato com nossa equipe de
+                    suporte quando
+                    precisar!</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="../index.html">Página Inicial</a></li>
+                    <li><a href="sobre.html" target="_blank">Sobre</a></li>
+                    <li><a href="acessibilidade.html" target="_blank">Acessibilidade</a></li>
+                    <li><a href="termos_condicoes.html" target="_blank">Termos e Condições</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Atendimento</h4>
+                <ul>
+                    <li><a href="contato.html" target="_blank">Fale Conosco</a></li>
+                    <li><a href="perfil.html">Seu Perfil</a></li>
+                    <li><a href="carrinho-mercadoria.html">Minhas Compras</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 <strong>MacEstampas</strong>. Todos os direitos reservados.</p>
+                <p><a href="contato.html">Precisa de ajuda?</a></p>
+            </div>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
+
 </html>
