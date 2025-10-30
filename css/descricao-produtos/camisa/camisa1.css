@@ -178,7 +178,23 @@ nav p a {
 }
 
 
+.camisa01, .camisa02, .camisa03, .camisa04, .camisa05, .camisa06, .camisa07, .camisa08 {
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
 
+a {
+    text-decoration: none;
+}
+
+.camisa01:hover, .camisa02:hover, .camisa03:hover, .camisa04:hover, .camisa05:hover, .camisa06:hover, .camisa07:hover, .camisa08:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
 
 
 

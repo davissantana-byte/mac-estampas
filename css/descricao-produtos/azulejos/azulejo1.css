@@ -178,14 +178,7 @@ nav p a {
 }
 
 
-
-
-
-
-
-
-
-.almofada01, .almofada02, .almofada03, .almofada04 {
+.azulejo01, .azulejo02, .azulejo03, .azulejo04 {
     border: 1px solid;
     border-radius: 20px;
     margin: 15px;
@@ -199,20 +192,6 @@ a {
     text-decoration: none;
 }
 
-.almofada01:hover, .almofada02:hover, .almofada03:hover, .almofada04:hover {
+.azulejo01:hover, .azulejo02:hover, .azulejo03:hover, .azulejo04:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -178,9 +178,23 @@ nav p a {
 }
 
 
+.caneca01, .caneca02, .caneca03, .caneca04, .caneca05, .caneca06, .caneca07, .caneca08, .caneca09, .caneca10, .caneca11, .caneca12, .caneca13, .caneca14, .caneca15, .caneca16, .caneca17, .caneca18 {
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
 
+a {
+    text-decoration: none;
+}
 
-
+.caneca01:hover, .caneca02:hover, .caneca03:hover, .caneca04:hover, .caneca05:hover, .caneca06:hover, .caneca07:hover, .caneca08:hover, .caneca09:hover, .caneca10:hover, .caneca11:hover, .caneca12:hover, .caneca13:hover, .caneca14:hover, .caneca15:hover, .caneca16:hover, .caneca17:hover, .caneca18:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
 
 
 
