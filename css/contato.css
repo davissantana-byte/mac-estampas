@@ -1,207 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-body {
-    font-family: 'Lato', 'Roboto', 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: #333;
+.cabecalho > img {
+    margin: 20px;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background-color: white;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-left: 140px;
+    height: 100px;
+    margin-top: -125px;
+    justify-content: center;
 }
 
-header img {
-    transition: transform 0.3s;
+.menu div {
+    text-align: center;
+    padding-top: 20px;
 }
 
-header img:hover {
-    transform: scale(1.05);
-}
-
-header nav {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-header nav p {
-    margin: 0;
-}
-
-header nav p a {
+.menu div p a {
     text-decoration: none;
     font-size: 18px;
     color: black;
-    font-family: 'Montserrat', 'Bebas Neue', 'Oswald', sans-serif;
-    padding: 5px 10px;
-    transition: border 0.3s;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
 
-header nav p a:hover {
-    border-bottom: 2px solid black;
+.menu div p a:hover {
+    border-bottom: 2px solid;
 }
 
-hr {
+.tituloinform{
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
+
+
+section.contato {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section.contato h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+section.contato p {
+  font-size: 17px;
+  color: #333;
+  margin: 6px 0;
+}
+
+section.contato strong {
+  color: #000;
+}
+
+section.contato a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+section.contato a:hover {
+  text-decoration: underline;
+}
+
+section.contato form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+section.contato label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+section.contato input,
+section.contato textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+section.contato input:focus,
+section.contato textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 3px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+section.contato button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section.contato button:hover {
+  background-color: #004a94;
+  transform: scale(1.02);
+}
+
+
+.links a{
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
+
+
+
+
+.links a:hover{
+    color: #04b8ff;
     border: none;
-    height: 1px;
-    background-color: #ddd;
-    margin: 0;
 }
 
-main {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+.fa-brands fa-whatsapp{
+    size: 1;
 }
 
-h1, h2 {
-    text-align: center;
-    font-family: 'Lato', 'Roboto', 'Open Sans';
-    margin-bottom: 30px;
-}
 
-h1 {
-    font-size: 2.5rem;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
 
-h2 {
-    font-size: 1.8rem;
-    color: #3498db;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-align: left;
-}
 
-section {
-    margin-bottom: 50px;
-}
 
-section p {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 15px;
-    text-align: justify;
-}
 
-address {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 5px;
-    font-style: normal;
-    margin-top: 20px;
-}
 
-address p {
-    margin-bottom: 10px;
-    font-size: 1rem;
-}
 
-address a {
-    color: #3498db;
-    text-decoration: none;
-    transition: color 0.3s;
-}
 
-address a:hover {
-    color: #e74c3c;
-    border-bottom: 2px solid #e74c3c;
-}
 
-aside {
-    text-align: center;
-    margin: 30px 0;
-}
 
-aside iframe {
-    width: 100%;
-    max-width: 800px;
-    height: 450px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.8);
-}
 
-form {
-    background-color: #f8f9fa;
-    padding: 30px;
-    border-radius: 5px;
-    max-width: 700px;
-    margin: 0 auto;
-}
 
-form p {
-    margin-bottom: 20px;
-}
 
-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-family: 'Montserrat', sans-serif;
-    color: #2c3e50;
-}
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    font-size: 1rem;
-    font-family: inherit;
-    transition: border 0.3s;
-}
 
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form textarea:focus {
-    outline: none;
-    border-color: #3498db;
-}
 
-form textarea {
-    resize: vertical;
-    min-height: 150px;
-}
 
-form button[type="submit"] {
-    background-color: #3498db;
-    color: white;
-    padding: 12px 40px;
-    border: none;
-    border-radius: 3px;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-form button[type="submit"]:hover {
-    background-color: #2980b9;
-    transform: translateY(-2px);
-}
-
-footer {
-    padding: 30px 5%;
-}
 
 .principais {
-    display: grid;
+    display:grid;
     gap: 5px;
-    grid-template-columns: repeat(6, 1fr);
-    text-align: center;
-    margin-bottom: 50px;
+    grid-template-columns: repeat(5,1fr);
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .principais nav p a:hover {
@@ -215,7 +169,7 @@ footer .principais nav {
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
 
-footer nav p a {
+nav p a {
     text-decoration: none; 
     color: black;   
 }
@@ -223,4 +177,5 @@ footer nav p a {
 .outros {
     text-align: center;
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+    margin: 30px;
 }
