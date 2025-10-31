@@ -177,6 +177,23 @@ nav p a {
     border-radius: 20px;
 }
 
+.chinelo01, .chinelo02, .chinelo03, .chinelo04, .chinelo05, .chinelo06, .chinelo07, .chinelo08 {
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.chinelo01:hover, .chinelo02:hover, .chinelo03:hover, .chinelo04:hover, .chinelo05:hover, .chinelo06:hover, .chinelo07:hover, .chinelo08:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
 
 
 
