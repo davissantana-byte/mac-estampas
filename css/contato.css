@@ -46,18 +46,20 @@
 section.contato {
   font-family: 'Montserrat', sans-serif;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: center;
   padding: 2rem;
-
+  gap:.5rem;
+  align-items: center;
 }
 
 
 section.contato h2 {
- text-align: left;
-  font-size: 28px;
-  color: #2c3e50;
-  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  text-align: flex;
+  padding: 2.9rem;
+  margin-top: 30px;
 
 }
 
@@ -142,6 +144,19 @@ section.contato button:hover {
 
 .mapa{
   font-family:'Montserrat', 'Bebas Neue', 'Oswald';
+}
+
+
+.form-wrapper {
+    display: flex;
+    align-items: center; /* centraliza verticalmente a imagem com o form */
+    gap: 500px; /* controla o espaço entre a imagem e o formulário, pode ajustar */
+    justify-content: center; /* centraliza o conjunto na tela */
+}
+
+.form-wrapper img.logopreta {
+    width: 900px; /* ajuste o tamanho que quiser */
+    height: auto;
 }
 
 
