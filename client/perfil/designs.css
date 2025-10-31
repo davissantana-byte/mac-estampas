@@ -1,0 +1,29 @@
+*{
+    background-color: #E6E6E6;
+}
+
+header{
+    font-size: 40px;
+    text-align: center;
+}
+
+legend {
+    border: solid 2px #a09e9e;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+fieldset{
+    border: solid 2px #a09e9e;
+    border-radius: 30px;
+    background-color: whitesmoke;
+}
+
+.criacoes{
+    background-color: whitesmoke;
+}
+
+p{
+    background-color: whitesmoke;
+}

@@ -1,0 +1,45 @@
+*{
+    background-color: #E6E6E6;
+}
+
+header{
+    font-size: 30px;
+    text-align: center;
+}
+
+.todos-os-cards{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cards{
+    border: solid 1px #a09e9e;
+    border-radius: 20px; 
+    background-color: whitesmoke;  
+    text-align: center; 
+    padding: 20px;
+}
+
+button{
+  border-radius: 15px;
+  background-color: rgb(10, 170, 233);
+  border: rgb(10, 170, 233);
+  color: whitesmoke;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.titulo{
+    background-color: whitesmoke;
+}
+
+p{
+    background-color: whitesmoke;
+}
+
+.atencao{
+    color: red;
+}

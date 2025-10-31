@@ -1,0 +1,47 @@
+*{
+    background-color: #E6E6E6;
+}
+
+.encomendas{
+    font-size: 60px;
+    text-align: center;
+}
+
+.todos-os-cards{
+    display: flex;
+    border: solid 1px #a09e9e;
+    justify-content: center;
+    gap: 100px;
+    margin: 0 auto;
+    max-width: 600px;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.cards{
+    border-radius: 10px;
+    padding: 20px;
+    border: solid 1px #a09e9e;
+    background-color: whitesmoke;
+}
+
+p{
+    background-color: whitesmoke;
+}
+
+.todos-os-cards h1{
+    background-color: whitesmoke;
+}
+
+button{
+    border-radius: 15px;
+    background-color: rgb(10, 170, 233);
+    border: rgb(10, 170, 233);
+    color: whitesmoke;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.atencao{
+  color: red;
+}
