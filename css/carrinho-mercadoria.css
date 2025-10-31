@@ -144,6 +144,9 @@ aside.de-lado dl dd {
   background-color: #2d664c;
 }
 
+section form.local input[type='submit'][value='Salvar Informações de Entrega']:hover {
+  background-color: #1e3f6e;
+}
 /* FORMULÁRIO DE ENDEREÇO  */
 section form.local {
   background-color: #1e1e1e;
@@ -232,10 +235,16 @@ fieldset {
 @media (max-width: 1024px) {
   main {
     flex-direction: column;
+    gap: 1rem;
   }
   aside.de-lado {
     order: -1;
     width: 100%;
+  }
+  aside.de-lado {
+    order: -1;
+    width: 100%;
+    margin-bottom: 1rem; /* separa do carrinho */
   }
 }
 
