@@ -5,6 +5,7 @@
     margin: 20px;
 }
 
+
 .menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -15,10 +16,12 @@
     justify-content: center;
 }
 
+
 .menu div {
     text-align: center;
     padding-top: 20px;
 }
+
 
 .menu div p a {
     text-decoration: none;
@@ -27,27 +30,37 @@
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
 
+
 .menu div p a:hover {
     border-bottom: 2px solid;
 }
 
-.tituloinform{
-    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+
+.tituloinform {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
 
 
 section.contato {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 20px;
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap:.5rem;
+  align-items: center;
 }
 
+
 section.contato h2 {
-  text-align: center;
-  font-size: 32px;
-  color: #2c3e50;
-  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  text-align: flex;
+  padding: 2.9rem;
+  margin-top: 30px;
+
 }
 
 section.contato p {
@@ -70,15 +83,19 @@ section.contato a:hover {
 }
 
 section.contato form {
-  margin-top: 40px;
+  width: 380px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  text-align: left; 
 }
 
 section.contato label {
   font-weight: 600;
   color: #2c3e50;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
 }
 
 section.contato input,
@@ -106,12 +123,10 @@ section.contato button {
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 section.contato button:hover {
   background-color: #004a94;
-  transform: scale(1.02);
 }
 
 
@@ -120,32 +135,29 @@ section.contato button:hover {
 }
 
 
-
-
 .links a:hover{
     color: #04b8ff;
     border: none;
 }
 
-.fa-brands fa-whatsapp{
-    size: 1;
+
+
+.mapa{
+  font-family:'Montserrat', 'Bebas Neue', 'Oswald';
 }
 
 
+.form-wrapper {
+    display: flex;
+    align-items: center; /* centraliza verticalmente a imagem com o form */
+    gap: 500px; /* controla o espaço entre a imagem e o formulário, pode ajustar */
+    justify-content: center; /* centraliza o conjunto na tela */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.form-wrapper img.logopreta {
+    width: 900px; /* ajuste o tamanho que quiser */
+    height: auto;
+}
 
 
 
