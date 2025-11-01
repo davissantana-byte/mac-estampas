@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.cabecalho  img {
+    margin: 25px;
+    width: 110px;
+}
+
+.menu {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(5, 2fr);
+    text-align: center;
+    margin-left: 140px;
+    height: 100px;
+    margin-top: -130px;
+    justify-content: center;
+}
+
+.menu > div {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.menu div p a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
+
+.menu div p a:hover {
+    border-bottom: 2px solid;
+}
+
+.principais {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.principais nav p a:hover {
+    border-bottom: 2px solid;
+}
+
+footer .principais nav {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
+
+nav p a {
+    text-decoration: none; 
+    color: black;   
+}
+
+.outros {
+    text-align: center;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+    margin: 30px;
+}
+
+
+.agenda1 {
+    margin-top: 30px;
+    margin-bottom:60px;
+}
+
+.conteudo-agenda1 {
+    display: flex;
+}
+
+.img-agenda1 {
+    text-align: center;
+    flex: 4;
+    margin-top: 20px;
+}
+
+.img-agenda1 img {
+    width: 500px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.preco-descricao {
+    flex: 2;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.titulo-produto {
+    text-align: left;
+}
+
+.preco-produto {
+    text-align: left;
+    font-size: 35px;
+}
+
+.subtitulo-produto {
+    text-align: left;
+    font-size: 18px;
+}
+
+.lista-detalhes {
+    text-align: left;
+    list-style-type: square;
+}
+
+.lista-detalhes li {
+    padding: 7px;
+}
+
+.comprar-carrinho {
+    flex: 2;
+    text-align: center;
+    margin-top: 120px ;
+}
+
+.compra-adiciona-quantidade {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.comprar-agora {
+    padding: 20px;
+}
+.comprar-agora h2 {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.comprar-agora button {
+    border-radius: 20px;
+}
+
+.adicionar-carrinho {
+    padding: 20px;
+}
+
+.adicionar-carrinho h2 {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.adicionar-carrinho button {
+    border-radius: 20px;
+}
+
+.quantidade {
+    font-size: 20px;
+}
+
+.produtos-relacionados {
+    margin: 40px;
+}
+
+.titulo-produtos-relacionados {
+    text-align: center;
+}
+
+.agenda-relacionados {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.agenda-relacionados img {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+
+.caneca01, .caneca02, .caneca03, .caneca04, .caneca05, .caneca06, .caneca07, .caneca08, .caneca09, .caneca10, .caneca11, .caneca12, .caneca13, .caneca14, .caneca15, .caneca16, .caneca17, .caneca18 {
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.caneca01:hover, .caneca02:hover, .caneca03:hover, .caneca04:hover, .caneca05:hover, .caneca06:hover, .caneca07:hover, .caneca08:hover, .caneca09:hover, .caneca10:hover, .caneca11:hover, .caneca12:hover, .caneca13:hover, .caneca14:hover, .caneca15:hover, .caneca16:hover, .caneca17:hover, .caneca18:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+

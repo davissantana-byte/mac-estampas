@@ -3,120 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon"/>
     <title>Carrinho de Compras - MacEstampas</title>
-    <link rel="stylesheet" href="../css/carrinho-mercadoria.css">
+    <link rel="stylesheet" href="../css/carrinho-mercadoria.css" />
+    <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon" />
+    <script src="../js/carrinho.js/carinho.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
-  <body>
-    <header>
-      <a href="../index.html"
-        ><img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100"
-      /></a>
 
-      <nav>
-        <p><a href="../index.html">Página Inicial</a></p>
-        <p><a href="login.html" target="_blank">Entre</a></p>
-        <p><a href="crie-sua-conta.html">Crie a sua conta</a></p>
-        <p><a href="perfil.html">Seu perfil</a></p>
+  <body>
+    <header class="cima">
+      <a class="logo" aria-label="logo da macestampas" href="../index.html">
+        <img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100" />
+      </a>
+      <details class="cep-cima">
+        <summary class="summary" aria-label="Informe seu CEP">Informe seu CEP</summary>
+        <form class="form-cima" action="#" method="post">
+          <label for="cep-header">CEP:</label>
+          <input
+            type="text"
+            name="cep"
+            id="cep-header"
+            required
+            placeholder="00000-000"
+            title="Formato: 00000-000"
+            pattern="[0-9]{5}-[0-9]{3}"
+            maxlength="9"
+            inputmode="numeric"
+          />
+          <button type="submit">OK</button>
+        </form>
+      </details>
+      <nav class="nav-cima" aria-label="Navegação principal">
+        <ul class="menu-cima">
+          <li class="esquerda"><a href="../index.html">Página Inicial</a></li>
+          <li class="esquerda"><a href="produtos.html">Categoria</a></li>
+          <li class="esquerda"><a href="suporte.html">Suporte</a></li>
+          <li class="separado">
+            <a href="login-cadastro/login.html" target="_blank" rel="noopener noreferrer">Entre</a>
+          </li>
+          <li class="separado"><a href="login-cadastro/cadastro.html">Crie a sua conta</a></li>
+          <li class="bola-do-perfil">
+            <a href="perfil/perfil.html">
+              <img src="../assets/perfil/fotodeusuario.png" alt="foto de perfil" width="30" />
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
-
     <hr />
-
     <main>
-      <h2>Carrinho de Compras</h2>
-      <!--EXEMPLO-->
-      <section>
-        <p>Seu carrinho está vazio.</p>
-        <a href="index.html">Voltar para a loja</a>
-        <h2>Produtos no Carrinho</h2>
-        <table border="0">
-          <thead>
-            <tr>
-              <th>Produto</th>
-              <th>Preço</th>
-              <th>Quantidade</th>
-              <th>Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Produto 1</td>
-              <td>R$ 50,00</td>
-              <td>1</td>
-              <td>R$ 50,00</td>
-            </tr>
-            <tr>
-              <td>Produto 2</td>
-              <td>R$ 30,00</td>
-              <td>2</td>
-              <td>R$ 60,00</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="3">Total Geral</td>
-              <td>R$ 110,00</td>
-            </tr>
-          </tfoot>
-        </table>
-        <form action="finalizar.html" method="post">
-          <input type="submit" value="Finalizar Compra" />
-        </form>
+      <section class="carrinho">
+        <h1>Carrinho de Compras</h1>
+        <h2 class="titulo-carrinho">Produtos no Carrinho</h2>
+        <fieldset class="fundo-tabela">
+          <legend class="itens">Itens Selecionados</legend>
+          <table class="tabela-1">
+            <caption>
+              Lista de produtos adicionados ao carrinho
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Imagem</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Remover</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="imagem-produto">
+                  <img
+                    src="../assets/img/camisas/camisa2.jpeg"
+                    alt="Camiseta Infantil Branca Estampa Personalizada: 'Heitor 3 Anos'"
+                    width="100"
+                  />
+                </td>
+                <td>
+                  <p>
+                    <small
+                      >Camiseta Infantil Branca Estampa <br />Personalizada: "Heitor 3 Anos"</small
+                    >
+                  </p>
+                </td>
+                <td>R$ 35,00</td>
+                <td>
+                  <label for="quant-1">Qtde:</label>
+                  <input
+                    id="quant-1"
+                    type="number"
+                    name="quantidade[1]"
+                    value="1"
+                    min="1"
+                    step="1"
+                  />
+                </td>
+                <td>
+                  <button
+                    class="botao-remover"
+                    type="button"
+                    aria-label="Remover Camiseta Infantil Branca Estampa Personalizada: Heitor 3 Anos do carrinho"
+                  >
+                    Remover
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
       </section>
-      
+      <aside class="de-lado">
+        <h3 class="h3-1">Resumo da Compra</h3>
+        <fieldset>
+          <dl>
+            <dt>Itens:</dt>
+            <dd>2</dd>
+            <dt>Subtotal:</dt>
+            <dd>R$ 90,00</dd>
+            <dt>Frete:</dt>
+            <dd>Grátis</dd>
+            <dt>Total:</dt>
+            <dd>R$ 90,00</dd>
+          </dl>
+          <form action="pagamento.html" method="post">
+            <button class="botao-comprar" type="button" onclick="location.href='pagamento.html'">
+              Finalizar Compra
+            </button>
+            <button class="botao-limpar" type="reset">Limpar Carrinho</button>
+            <p class="ou">Ou</p>
+            <a class="continuar" href="produtos.html">Continuar Comprando</a>
+          </form>
+        </fieldset>
+      </aside>
       <section>
-        <h2>Informações de Entrega</h2>
-        <form action="processar_entrega.html" method="post">
-          <legend>Endereço</legend>
-          <fieldset>
-            <label for="endereco">Rua / Avenida:</label>
-            <input
-              type="text"
-              id="endereco"
-              name="endereco"
-              required
-            /><br /><br />
+        <form class="local" onsubmit="calculaResultado(event)" action="#" method="post">
+          <h3 class="h3-2">Informações de Entrega</h3>
+          <fieldset class="fundo-endereço">
+            <legend class="endereco">Endereço</legend>
+            <label class="endereco-barra" for="endereco">Rua / Avenida:</label>
+            <input type="text" id="endereco" name="endereco" required /><br /><br />
             <label for="cidade">Cidade:</label>
             <input type="text" id="cidade" name="cidade" required /><br /><br />
-            <label for="cep">CEP:</label>
+            <label class="cep2" for="cep-body">CEP:</label>
             <input
               type="text"
-              id="cep"
+              id="cep-body"
               name="cep"
               required
               placeholder="00000-000"
-            /><br /><br />
-            <input type="submit" value="Salvar Informações de Entrega" />
+              title="Formato: 00000-000"
+              pattern="[0-9]{5}-[0-9]{3}"
+              maxlength="9"
+              inputmode="numeric"
+            />
+            <small class="ajuda">Formato: 00000-000</small><br /><br />
+            <input class="botaosalvar" type="submit" value="Salvar Informações de Entrega" />
           </fieldset>
         </form>
       </section>
+      <a class="botao-voltar" href="../index.html">Voltar para a loja</a>
     </main>
-
-    <br />
     <hr />
-
-    <footer>
-      <nav>
-        <p><a href="../index.html">Página Inicial</a></p>
+    <footer class="baixo">
+      <nav class="nav-baixo" aria-label="Navegação do rodapé">
+        <ul class="menu-baixo">
+          <li><a href="../index.html">Página Inicial</a></li>
+          <li><a href="termos_condicoes.html">Termos e condições</a></li>
+          <li><a href="contato.html" target="_blank" rel="noopener noreferrer">Contato</a></li>
+          <li><a href="sobre.html" target="_blank" rel="noopener noreferrer">Sobre</a></li>
+          <li><a href="suporte.html" target="_blank" rel="noopener noreferrer">Suporte</a></li>
+          <li>
+            <a href="acessibilidade.html" target="_blank" rel="noopener noreferrer"
+              >Acessibilidade</a
+            >
+          </li>
+        </ul>
       </nav>
-      <nav>
-        <p><a href="termos_condicoes.html">Termos e condições</a></p>
-      </nav>
-      <nav>
-        <p><a href="contato.html" target="_blank">Contato</a></p>
-      </nav>
-      <nav>
-        <p><a href="sobre.html" target="_blank">Sobre</a></p>
-      </nav>
-      <nav>
-        <p><a href="suporte.html" target="_blank">Suporte</a></p>
-      </nav>
-      <nav>
-        <p><a href="acessibilidade.html" target="_blank">Acessibilidade</a></p>
-      </nav>
-
-      <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+      <p class="final">&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
     </footer>
 
     <div vw class="enabled">
@@ -125,9 +188,10 @@
         <div class="vw-plugin-top-wrapper"></div>
       </div>
     </div>
+
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-      new window.VLibras.Widget("https://vlibras.gov.br/app");
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
   </body>
 </html>

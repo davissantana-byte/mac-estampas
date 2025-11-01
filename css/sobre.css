@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-.cabecalho > img {
+header a img {
     margin: 20px;
 }
 
@@ -14,6 +14,7 @@
     height: 100px;
     margin-top: -125px;
     justify-content: center;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
 
 .pcima div {
@@ -25,61 +26,43 @@
     text-decoration: none;
     font-size: 18px;
     color: black;
-    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
 
 .pcima div p a:hover {
     border-bottom: 2px solid;
 }
 
-.list {
-    list-style-type: none; 
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 0 20px;
-    text-align: left;
-    font-family: 'Lato', 'Roboto', 'Open Sans';             
-}
-
 section h3 {
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 0 20px;
-    text-align: left;
-    font-family: 'Lato', 'Roboto', 'Open Sans';
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 .p {
     color: #8c8c8c;
     font-size: 25px;
     font-weight: 399;
+    margin-bottom: 40px;
 }
 
-section p {
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 0 20px;
-    text-align: left;
-    font-family: 'Lato', 'Roboto', 'Open Sans';
+section p, .list {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding-left: 0%;
 }
 
 section h2{
     font-size: 30px;
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 0 20px;
-    text-align: left;
-    font-family: 'Lato', 'Roboto', 'Open Sans';
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 section h1 {
     color:#333;
     font-size: 50px;
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     text-align: left;
-    font-family: 'Lato', 'Roboto', 'Open Sans';
 }
 
 .pbaixo {
@@ -108,4 +91,94 @@ footer .pbaixo nav p a:hover {
 .outros {
     text-align: center;
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
+
+.conteudo {
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto; 
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-family: 'Lato', 'Roboto', 'Open Sans';
+}
+
+.conteudo h1, h2, h3 {
+    font-family: 'Oswald', 'Montserrat', sans-serif; /* Usa a fonte de título que você já importou */
+    font-weight: 600;
+}
+
+.desenvolvedores {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee; /* Uma linha para separar */
+    font-size: 14px;
+    color: #777;
+}
+.desenvolvedores p {
+    margin: 5px 0;
+}
+
+.secao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;      
+}
+
+.secao h2 {
+    width: 100%; 
+}
+
+.secao article {
+    flex: 1;             
+    min-width: 300px;    
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.secao article:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1); 
+    border-color: #ddd;
+}
+
+.macestampas {
+    background-color: #f8f8f8;
+    text-align: center; 
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+.macestampas h1 {
+    text-align: center;
+}
+
+.produtos {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ver-p {
+    display: inline-block; 
+    background-color: #007BFF; 
+    color: #FFFFFF; 
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+    text-decoration: none; 
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.ver-p:hover {
+    background-color: #0056b3; 
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
 }

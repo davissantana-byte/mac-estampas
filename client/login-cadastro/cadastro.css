@@ -1,0 +1,109 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F0F7FF;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px; 
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+main {
+  background-color: #FFFFFF;
+  padding: 24px 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  color: #1E3A8A;
+  line-height: 1.2;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #F9FAFB;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #14B8A6;
+  box-shadow: 0 0 4px rgba(20, 184, 166, 0.3);
+}
+
+button {
+  background-color: #14B8A6;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0D9488;
+}
+
+a {
+  color: #2563EB;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#message {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #DC2626;
+}
+
+@media (max-height: 650px) {
+  body {
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  input, button, select {
+    font-size: 0.95rem;
+  }
+}

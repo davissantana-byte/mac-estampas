@@ -6,88 +6,113 @@
     <title>Contato - MacEstampas</title>
     <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
+<header class="cabecalho">   
         <a href="../index.html"><img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100"></a>
-    
-        <nav>
-            <p><a href="../index.html">Página Inicial</a></p>
-            <p><a href="login.html" target="_blank">Entre</a></p>
-            <p><a href="crie-sua-conta.html">Crie a sua conta</a></p> 
-            <p><a href="perfil.html">Seu perfil</a></p>
-            <p><a href="carrinho-mercadoria.html">Minhas compras</a></p>
+
+        <br>
+        <nav class="menu">
+            <div>
+                <p><a href="../index.html">Inicio</a></p>
+            </div>
+            <div>
+                <p><a href="login-cadastro/login.html" target="_blank">Entre</a></p>
+            </div>
+            <div>
+                <p><a href="login-cadastro/cadastro.html" target="_blank">Crie sua conta</a></p>
+            </div>
+            <div>
+                <p><a href="perfil/perfil.html">Seu perfil</a></p>
+            </div>
         </nav>
     </header>
 
     <hr>
 
-    <main> 
-        <h1>Fale Conosco</h1>
+    <main>
 
-        <section>
-            <p>Tem alguma dúvida? Sugestão ou quer fazer um orçamento? Preencha o formulário abaixo ou entre em contato por um de nossos canais.</p>
+        <div class=tituloinform>
+            <h1> Fale Conosco!</h1>
 
-            <h2>Nossas Informações</h2>
+            <address class="links">
+                <p><strong>Email:</strong>   <a href="mailto:contato@macestampas.com.br">contato@macestampas.com.br</a></p>
 
-            <address>
-                <p><strong>Email:</strong> <a href="mailto:contato@macestampas.com.br">contato@macestampas.com.br</a></p>
                 <p><strong>Telefone / Whatsapp:</strong> <a href="tel:+5511912345678">(11) 91234-5678</a></p>
-                
-                <p><strong>R. João Vidal de Siqueira, 39 - Jardim Teresa</strong></p>
-            </address>
-        </section>
 
-        <section>
+                <p><strong>Endereço:</strong> R. João Vidal de Siqueira, 39 - Jardim Teresa, São Paulo - SP</p>
+                
+            </address>
+        </div>
+        
+
+        
+<section class="contato">
+  <div class="form-container">
+    <h2 class="titulo2">Envie-nos uma mensagem</h2>
+
+    <div class="form-wrapper">
+      <img class="logopreta" src="../assets/icons/logo-preta-e-branca.jpg" alt="logo em preto em branco da loja">
+      
+      <form action="#" method="post">
+        <p><label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome_usuario" placeholder="Digite seu nome" required></p>
+
+        <p><label for="email">Seu E-mail:</label>
+          <input type="email" id="email" name="email_usuario" placeholder="seu.email@exemplo.com" required></p>
+
+        <p><label for="mensagem">Sua mensagem:</label>
+          <textarea id="mensagem" name="mensagem_usuario" rows="8" placeholder="Digite sua mensagem aqui" required></textarea></p>
+
+        <p><button type="submit">Enviar Mensagem</button></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+        <section class="mapa">
             <h2>Onde Estamos</h2>
             
             <aside>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4407052214656!2d-46.55033889124573!3d-23.58852261818993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5dad0f222e31%3A0x5cc41a4925276c95!2sR.%20Jo%C3%A3o%20Vidal%20de%20Siqueira%2C%2039%20-%20Jardim%20Teresa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003261-050!5e0!3m2!1spt-BR!2sbr!4v1758410471952!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4407052214656!2d-46.55033889124573!3d-23.58852261818993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5dad0f222e31%3A0x5cc41a4925276c95!2sR.%20Jo%C3%A3o%20Vidal%20de%20Siqueira%2C%2039%20-%20Jardim%20Teresa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003261-050!5e0!3m2!1spt-BR!2sbr!4v1758410471952!5m2!1spt-BR!2sbr" width="100%" height="500" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de localização MacEstampas"></iframe>
             </aside>
         </section>
 
-        <section>
-            <h2>Envie-nos uma mensagem</h2>
-            <form action="#" method="post">
-                <p>
-                    <label for="nome">Nome Completo:</label><br>
-                    <input type="text" id="nome" name="nome_usuario" placeholder="Digite seu nome." required>
-                </p>
-                <p>
-                    <label for="email">Seu E-mail:</label><br>
-                    <input type="email" id="email" name="email_usuario" placeholder="seu.email@exemplo.com" required>
-                </p>
-                <p>
-                    <label for="mensagem">Sua mensagem:</label><br>
-                    <textarea id="mensagem" name="mensagem_usuario" rows="8" cols="50" placeholder="Digite sua mensagem aqui" required></textarea>
-                </p>
-                <p>
-                    <button type="submit">Enviar Mensagem</button>
-                </p>
-            </form>
-        </section>
+
+
+
     </main>
 
     <hr>
     
-    <footer>
-        <nav>
-            <p><a href="../index.html">Página Inicial</a></p>
-        </nav>
-        <nav>
-            <p><a href="termos_condicoes.html">Termos e condições</a></p>
-        </nav>
-        <nav>
-            <p><a href="sobre.html" target="_blank">Sobre</a></p>
-        </nav>
-        <nav>
-            <p><a href="suporte.html" target="_blank">Suporte</a></p>
-        </nav>
-        <nav>
-            <p><a href="acessibilidade.html" target="_blank">Acessibilidade</a></p>
-        </nav>
+      <footer>
+        <div class="principais">
+            <nav>
+                <p><a href="../client/termos_condicoes.html">Termos e condições</a></p>
+            </nav>
+            <nav>
+                <p><a href="../client/sobre.html" target="_blank">Sobre</a></p>
+            </nav>
+            <nav>
+                <p><a href="../client/pagamento.html" target="_blank">Pagamento</a></p>
+            </nav>
+            <nav>
+                <p><a href="../client/suporte.html" target="_blank">Suporte</a></p>
+            </nav>
+            <nav>
+                <p><a href="../client/acessibilidade.html" target="_blank">Acessibilidade</a></p>
+            </nav>
+        </div>
 
-        <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+        <div class="outros">
+            <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <div vw class="enabled">

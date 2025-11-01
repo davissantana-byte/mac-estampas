@@ -5,6 +5,8 @@
     <title>Entrega e Pagamento - MacEstampas</title>
     <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/pagamento.css">
+    <script src ="../js/pagamento/pagamento.js"></script>
+    <script src ="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
@@ -12,35 +14,84 @@
     
         <nav>
             <p><a href="../index.html">Página Inicial</a></p>
-            <p><a href="perfil.html">Seu perfil</a></p>
-            <p><a href="carrinho-mercadoria.html">Minhas compras</a></p>
+            <p><a href="perfil/perfil.html">Seu perfil</a></p>
+            
         </nav>
     </header>
 
     <main>
         <h1>Finalizar Compra</h1>
 
-        <section>
-            <h2>Adicionar endereço de entrega ou retirada</h2>
+        <div class="checkout-container">
 
-            <form action="pagamento2.html" method="get">
-                <button type="submit">Adicionar um novo endereço de entrega</button>
-            </form>
+            <div class="coluna-principal">
 
+    <section class="outros">
+            <h2>Adicionar endereço de entrega ou retirada</h2>      
+        <section class="endereco-tela">
+            <h2>Entrega para [MANZOTI]</h2> 
+            <p class="endereco">
+                Rua santo antonio 64, Vila Andreia, Ferraz de Vasconcelos,SP, 08537040,Brsil
+            </p>
+        
+    <!--<form action="pagamento2.html" method="get">
+        <button type="submit">Adicionar um novo endereço de entrega</button>
+    </form> <!-->
+
+
+    <form action="local_retirada.html" method="get">
+        <input type="submit" value="Encontre um local de retirada nas proximidades">
+    </form>
+    <br>
+
+    <form action="carrinho-mercadoria.html" method="get">
+        <button type="submit">Voltar ao carrinho</button>
+</fieldset>
+    </form>
+    </section>
+    </section>
+    
+    <details class="outros">
+        <summary> Adicionar um novo endereço de entrega</summary>
+
+        <form class="form2" action="#" method="post">
+            <label>Nome completo:</label>
+            <input type="text" name="nome" placeholder="Ex: Erick Rosa Dos Santos" required>
+
+            <label>Telefone:</label>
+            <input type="tel" name="telefone" placeholder="+55 (11) 99999-9999" required>
+
+            <label>CEP:</label>
+            <input type="text" name="cep" placeholder="Ex: 12345-000" required>
+
+            <label>Endereço:</label>
+            <input type="text" name="endereco" placeholder="Rua, avenida..." required>
+
+            <label>Número:</label>
+            <input type="text" name="numero" placeholder="Ex: 55" required>
+
+            <label>Complemento:</label>
+            <input type="text" name="complemento" placeholder="Apartamento, bloco, etc.">
+
+            <label>Bairro:</label>
+            <input type="text" name="bairro" placeholder="Ex: Centro" required>
+
+            <label>Cidade:</label>
+            <input type="text" name="cidade" placeholder="Ex: São Paulo" required>
+            
+            <label>Estado:</label>
+            <input type="text" name="estado" placeholder="Ex: SP" required>
             <br>
+            <button type="submit">Salvar endereço</button>
+        </form>
+    </details>
 
-            <form action="local_retirada.html" method="get">
-                <input type="submit" value="Encontre um local de retirada nas proximidades">
-            </form>
-        </section>
-
-        <hr>
-
-        <section>
-            <h2>Método de pagamento</h2>
-
-            <form action="processar_pagamento.php" method="post">
+        <details class="outros">
+     <summary>Método de pagamento</summary>
+     <br>
+            <form id="formPagamento">
                 <fieldset>
+                    <h2>Cartão de credito/Debito</h2>
                     <label for="nome">Nome do Titular:</label><br>
                     <input type="text" id="nome" name="nome" required><br><br>
                     <label for="numero_cartao">Número do Cartão:</label><br>
@@ -49,19 +100,41 @@
                     <input type="text" id="validade" name="validade" placeholder="MM/AA" required><br><br>
                     <label for="cvv">CVV:</label><br>
                     <input type="text" id="cvv" name="cvv" maxlength="3" required><br><br>
+                
+                <button type="button" onClick="calculaResultado()">Pagar</button>
                 </fieldset>
-
-                <button type="submit">Pagar</button>
             </form>
-        </section>
+        </details>
 
-        <hr>
 
-        <section>
+        <br>
+    </div> 
+
+        <div class="coluna-resumo">
+
+    <fieldset class="outros resumo-compra">
+            <h2>Resumo da compra</h2>
+
+        <p>
+            <span>SubTotal:</span>
+            <span>150,00</span> 
+        </p>
+        <p>
+            <span>Frete:</span>
+             <apan>20,00</span>
+        </p>
+        <h3>
+            <span>Total:</span>
+            <span>170,00</span>
+        </h3>  
+    </fieldset>
+    </div>
+    </div> 
+     
+        <section class="outros">
             <h2>Revisar itens e envio</h2>
         </section>
 
-        <hr>
     </main>
 
     <footer>
@@ -75,7 +148,7 @@
             <p><a href="contato.html" target="_blank">Contato</a></p>
         </nav>
         <nav>
-            <a href="sobre.html" target="_blank">Sobre</a></p>
+            <p><a href="sobre.html" target="_blank">Sobre</a></p>
         </nav>
         <nav>
             <p><a href="suporte.html" target="_blank">Suporte</a></p>
