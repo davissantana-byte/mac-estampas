@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastro — Loja da mãe do Manzoti</title>
+  <script src="cadastro.js"></script>
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+  <main>
+    <h1>Cadastro de usuário</h1>
+
+    <form id="register-form" action="cadastrado.html" method="GET" autocomplete="on" novalidate>
+      <label for="first">Nome</label><br>
+      <input id="first" name="first" type="text" placeholder="Gabriel" required><br><br>
+
+      <label for="last">Sobrenome</label><br>
+      <input id="last" name="last" type="text" placeholder="Manzoti" required><br><br>
+
+      <label for="email">E-mail</label><br>
+      <input id="email" name="email" type="email" placeholder="seu@email.com" required><br><br>
+
+      <label for="phone">Telefone (opcional)</label><br>
+      <input id="phone" name="phone" type="text" placeholder="(11) 91234-5678"
+             pattern="^\\(?\\d{2}\\)?\\s?\\d{4,5}-?\\d{4}$"
+             title="Formato: (11) 91234-5678"><br><br>
+
+      <label for="birth">Data de nascimento</label><br>
+      <input id="birth" name="birth" type="date" required><br><br>
+
+      <label for="password">Senha</label><br>
+      <input id="password" name="password" type="password" minlength="6" placeholder="mínimo 6 caracteres" required><br><br>
+
+      <label for="confirm">Confirmar senha</label><br>
+      <input id="confirm" name="confirm" type="password" minlength="6" placeholder="repita sua senha" required><br><br>
+
+      <label for="role">Tipo</label><br>
+      <select id="role" name="role" required>
+        <option value="">Selecione...</option>
+        <option value="user">Usuário</option>
+        <option value="admin">Administrador</option>
+      </select><br><br>
+
+      <button type="submit">Criar conta</button><br><br>
+
+      <a href="login.html">Voltar ao login</a>
+    </form>
+
+    <p id="message"></p>
+  </main>
+</body>
+</html>
