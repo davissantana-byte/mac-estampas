@@ -5,13 +5,11 @@ body {
     color: black;
     background-color: #e6e6e6;
 }
-
 main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 1px 20px; 
 }
-
 .all-itens  {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -28,7 +26,6 @@ a   {
     color: black;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .texto {
     text-decoration: none;
     color: white;
@@ -40,14 +37,12 @@ h1 {
     margin-bottom: 30px;
     text-decoration: none;
 }
-
 h2 {
     text-align: center;
     color: black;
     margin-bottom: 30px;
     text-decoration: none;
 }
-
 header {
     display: flex;
     justify-content: space-between;
@@ -60,19 +55,15 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 header img {
     border-radius: 50%;
 }
-
 header nav {
     display: flex;
 }
-
 header nav p {
     margin: 0 15px;
 }
-
 header nav p a {
     text-decoration: none;
     color: black;
@@ -81,12 +72,10 @@ header nav p a {
     border-bottom: 2px solid transparent;
     transition: color 0.3s, border-bottom 0.3s;
 }
-
 header nav p a:hover {
     color: black;
     border-bottom: 2px solid black;
 }
-
 .camisas    {
     display: grid;
     border-radius: 5px;
@@ -95,7 +84,6 @@ header nav p a:hover {
     text-decoration: none;
     color: black;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-
 }
 .agendas    {
    display: grid;
