@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos - MacEstampas</title>
     <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/produtos.css">
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
         <a href="../index.html"><img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100"></a>
-    
-        <nav>
-            <p><a href="../index.html">Página Inicial</a></p>
-            <p><a href="login.html" target="_blank">Entre</a></p>
-            <p><a href="crie-sua-conta.html">Crie a sua conta</a></p> 
-            <p><a href="perfil.html">Seu perfil</a></p>
-            <p><a href="carrinho-mercadoria.html">Minhas compras</a></p>
+
+        <nav class="menu">
+    <div>
+                <p><a href="contato.html">Contato</a></p>
+    </div>
+    <div>
+                <p><a href="login-cadastro/cadastro.html">Crie a sua conta</a></p>
+    </div>
+    <div>
+                <p><a href="login-cadastro/login.html">Entre</a></p>
+    </div>
+    <div>
+                <p><a href="produtos.html">Categorias</a></p>
+    </div>
+    <div>
+                <p><a href="perfil/perfil.html">Seu perfil</a></p>
+    </div>
+    <div>
+                <a href="carrinho-mercadoria.html" target="_self"><img src="../assets/icons/carrinho-de-compras.png" alt="Carrinho de compras" width="50"></a>
+    </div>
         </nav>
+
     </header>
     
     <hr>
@@ -26,7 +40,7 @@
 
     <h1>Catálogo</h1> 
         <section>
-        <div class="all-itens">
+    <div class="all-itens">
     <div class="camisas">
             <article>
                 <h3>Camisas</h3>
@@ -47,7 +61,7 @@
                 </a>
             </article>
     </div>
-        <div class="bloquinho-de-notas">
+    <div class="bloquinho-de-notas">
             <article>
                 <h3>Bloquinho de Notas</h3>
                 <a href="produtos-categorias/bloquinho-de-notas.html">
@@ -57,7 +71,7 @@
                 </a>
             </article>
     </div>
-     <div class="estojos">
+    <div class="estojos">
             <article>
                 <h3>Estojos</h3>
                 <a href="produtos-categorias/estojos.html">
@@ -67,7 +81,7 @@
                 </a>
             </article>
     </div>
-     <div class="panos">
+    <div class="panos">
             <article>
                 <h3>Panos (Toalhas)</h3>
                 <a href="produtos-categorias/pano.html">
@@ -92,7 +106,7 @@
                 <h3>Azulejos (Placas)</h3>
                 <a href="produtos-categorias/azulejos.html">
                     <figure>
-                        <img src="../assets/img/bilhetes-personalizaveis/bihete1.jpeg" alt="Ir para sessão de bilhetes para anotações." width="150" height="150">
+                        <img src="../assets/img/bilhetes-personalizaveis/bilhete1.jpeg" alt="Ir para sessão de bilhetes para anotações." width="150" height="150">
                     </figure>
                 </a>
             </article>
@@ -174,42 +188,45 @@
 
     <hr>
     
-    <footer>
-        <nav>
-            <p><a href="../index.html">Página Inicial</a></p>
-        </nav>
-        <nav>
-            <p><a href="termos_condicoes.html">Termos e condições</a></p>
-        </nav>
-        <nav>
-            <p><a href="contato.html" target="_blank">Contato</a></p>
-        </nav>
-        <nav>
-            <p><a href="sobre.html" target="_blank">Sobre</a></p>
-        </nav>
-        <nav>
-            <p><a href="suporte.html" target="_blank">Suporte</a></p>
-        </nav>
-        <nav>
-            <p><a href="acessibilidade.html" target="_blank">Acessibilidade</a></p>
-        </nav>
+<footer>
+    <div class="principais">
+            <nav>
+                <p><a href="termos_condicoes.html">Termos e condições</a></p>
+            </nav>
+            <nav>
+                <p><a href="contato.html">Contato</a></p>
+            </nav>
+            <nav>
+                <p><a href="sobre.html">Sobre</a></p>
+            </nav>
+            <nav>
+                <p><a href="pagamento.html">Pagamento</a></p>
+            </nav>
+            <nav>
+                <p><a href="suporte.html">Suporte</a></p>
+            </nav>
+            <nav>
+                <p><a href="acessibilidade.html">Acessibilidade</a></p>
+            </nav>
+    </div>
 
-        <address>
-            Acesse <a href="contato.html">Contato</a> para mais informações.
-        </address>
-
-        <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
-    </footer>
+    <div class="outros">
+            <address>
+            Para dúvidas ou contato, visite nossa <a href="contato.html">página de contato</a>.
+            </address>
+            <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+    </div>
+</footer>
 
     <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
+    </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+</script>
 </body>
 </html>
