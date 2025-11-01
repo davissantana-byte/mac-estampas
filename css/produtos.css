@@ -3,55 +3,175 @@ body {
     margin: 0;
     padding: 0;
     color: black;
-    background-color: #fff;
+    background-color: #e6e6e6;
 }
 
 main {
     max-width: 1200px;
     margin: 20px auto;
-    padding: 1 20px;
+    padding: 1px 20px; 
 }
 
+.all-itens  {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+a   {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.texto {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}  
 h1 {
     text-align: center;
-    color:black;
+    color: black;
     margin-bottom: 30px;
+    text-decoration: none;
 }
+
 h2 {
     text-align: center;
     color: black;
     margin-bottom: 30px;
+    text-decoration: none;
 }
+
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding: 10px 30px;
     background-color: #fff;
     /* Deixa o menu "grudado" no topo ao rolar (fiz com ajuda do gemini, não tava conseguindo kkkkkk)*/
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 header img {
     border-radius: 50%;
 }
+
 header nav {
     display: flex;
 }
+
 header nav p {
     margin: 0 15px;
 }
+
 header nav p a {
     text-decoration: none;
     color: black;
     font-size: 0.9rem;
     padding: 5px 0;
-    border-bottom: 2px solid transparent; 
+    border-bottom: 2px solid transparent;
     transition: color 0.3s, border-bottom 0.3s;
 }
+
 header nav p a:hover {
     color: black;
     border-bottom: 2px solid black;
+}
+
+.camisas    {
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+.agendas    {
+   display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+.bloquinho-de-notas {
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+.estojos    {
+   display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+.panos  {
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+.almofadas  {
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+.azulejos   {
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+.canecas    {
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+.mochilas   {
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+.chinelos   {
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+.sacolas    {
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+.copos  {
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+.garrafas   {
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
+}
+.mousepads  {
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color:#fff
 }
