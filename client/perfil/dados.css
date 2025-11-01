@@ -1,0 +1,44 @@
+*{
+    background-color: #E6E6E6;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 55px;
+}
+
+.todos-os-cards {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards {
+  border-radius: 10px;
+  padding: 20px;
+  border: solid 1px #a09e9e;
+  background-color: whitesmoke;
+}
+
+button{
+  border-radius: 15px;
+  background-color: rgb(10, 170, 233);
+  border: rgb(10, 170, 233);
+  color: whitesmoke;
+  padding: 10px 20px;
+  
+}
+
+.titulo2{
+  background-color: whitesmoke;
+}
+
+p{
+  background-color: whitesmoke;
+}
+
+.atencao{
+  color: red;
+}

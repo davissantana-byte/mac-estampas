@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Entre - MacEstampas</title>
+  <link rel="shortcut icon" href="../../assets/icons/logo-title.ico" type="image/x-icon">
+  <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+  <main>
+    <h1>Acesse sua conta</h1>
+
+    <form id="login-form" action="logado.html" method="GET" autocomplete="on" novalidate>
+      <label for="email">E-mail</label><br>
+      <input id="email" name="email" type="email" placeholder="seu@email.com" required><br><br>
+
+      <label for="password">Senha</label><br>
+      <input id="password" name="password" type="password" placeholder="senha" required><br><br>
+
+      <div class="options">
+        <label>
+          <input type="checkbox" name="remember"> Lembrar-me
+        </label>
+        <a href="cadastro.html">Criar conta</a>
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <p id="message"></p>
+  </main>
+
+  <!-- Link JavaScript -->
+  <script src="LoginJS.js"></script>
+</body>
+</html>

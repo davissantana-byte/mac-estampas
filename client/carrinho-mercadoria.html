@@ -7,17 +7,15 @@
     <link rel="stylesheet" href="../css/carrinho-mercadoria.css" />
     <link rel="shortcut icon" href="../assets/icons/logo-title.ico" type="image/x-icon" />
   </head>
-  <!--HTML ESTRUTURADO ESTA OK, IREI COMEÇAR A MEXER NO CSS SEPARANDO CADA SELETOR PARA PODER CONFIGURAR CADA UM SEPARADAMENTE NO CSS-->
+
   <body>
-    <header>
-      <a href="../index.html">
+    <header class="cima">
+      <a class="logo" aria-label="logo da macestampas" href="../index.html">
         <img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100" />
       </a>
-      <details>
-        <!--BARRA DE NAVEGAÇÃO-->
-        <!--TENTEI FAZER AQUELE POP-VIEW QUE APARECE QUANDO CLICAR NO CEP-->
-        <summary aria-label="Informe seu CEP">Informe seu CEP</summary>
-        <form action="#" method="post">
+      <details class="cep-cima">
+        <summary class="summary" aria-label="Informe seu CEP">Informe seu CEP</summary>
+        <form class="form-cima" action="#" method="post">
           <label for="cep-header">CEP:</label>
           <input
             type="text"
@@ -33,26 +31,31 @@
           <button type="submit">OK</button>
         </form>
       </details>
-      <nav aria-label="Navegação principal">
-        <ul>
-          <li><a href="../index.html">Página Inicial</a></li>
-          <li><a href="produtos.html">Categoria</a></li>
-          <li><a href="suporte.html">Suporte</a></li>
-          <li><a href="login.html" target="_blank" rel="noopener noreferrer">Entre</a></li>
-          <li><a href="crie-sua-conta.html">Crie a sua conta</a></li>
-          <li><a href="perfil.html">Seu perfil</a></li>
+      <nav class="nav-cima" aria-label="Navegação principal">
+        <ul class="menu-cima">
+          <li class="esquerda"><a href="../index.html">Página Inicial</a></li>
+          <li class="esquerda"><a href="produtos.html">Categoria</a></li>
+          <li class="esquerda"><a href="suporte.html">Suporte</a></li>
+          <li class="separado">
+            <a href="login-cadastro/login.html" target="_blank" rel="noopener noreferrer">Entre</a>
+          </li>
+          <li class="separado"><a href="login-cadastro/cadastro.html">Crie a sua conta</a></li>
+          <li class="bola-do-perfil">
+            <a href="perfil/perfil.html">
+              <img src="../assets/perfil/fotodeusuario.png" alt="foto de perfil" width="30" />
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
     <hr />
     <main>
-      <!--PRIMEIRO BLOCO-->
-      <section>
+      <section class="carrinho">
         <h1>Carrinho de Compras</h1>
-        <h2>Produtos no Carrinho</h2>
-        <h3>Itens Selecionados</h3>
-        <fieldset>
-          <table>
+        <h2 class="titulo-carrinho">Produtos no Carrinho</h2>
+        <fieldset class="fundo-tabela">
+          <legend class="itens">Itens Selecionados</legend>
+          <table class="tabela-1">
             <caption>
               Lista de produtos adicionados ao carrinho
             </caption>
@@ -67,7 +70,7 @@
             </thead>
             <tbody>
               <tr>
-                <td>
+                <td class="imagem-produto">
                   <img
                     src="../assets/img/camisas/camisa2.jpeg"
                     alt="Camiseta Infantil Branca Estampa Personalizada: 'Heitor 3 Anos'"
@@ -95,6 +98,7 @@
                 </td>
                 <td>
                   <button
+                    class="botao-remover"
                     type="button"
                     aria-label="Remover Camiseta Infantil Branca Estampa Personalizada: Heitor 3 Anos do carrinho"
                   >
@@ -106,9 +110,8 @@
           </table>
         </fieldset>
       </section>
-      <!--SEGUNDO BLOCO-->
-      <aside>
-        <h3>Resumo da Compra</h3>
+      <aside class="de-lado">
+        <h3 class="h3-1">Resumo da Compra</h3>
         <fieldset>
           <dl>
             <dt>Itens:</dt>
@@ -121,24 +124,25 @@
             <dd>R$ 90,00</dd>
           </dl>
           <form action="pagamento.html" method="post">
-            <button type="submit">Finalizar Compra</button>
-            <button type="reset">Limpar Carrinho</button>
-            <p>Ou</p>
-            <a href="produtos.html">Continuar Comprando</a>
+            <button class="botao-comprar" type="button" onclick="location.href='pagamento.html'">
+              Finalizar Compra
+            </button>
+            <button class="botao-limpar" type="reset">Limpar Carrinho</button>
+            <p class="ou">Ou</p>
+            <a class="continuar" href="produtos.html">Continuar Comprando</a>
           </form>
         </fieldset>
       </aside>
-      <!--TERCEIRO BLOCO-->
       <section>
-        <h3>Informações de Entrega</h3>
-        <form action="processar_entrega.html" method="post">
-          <fieldset>
-            <legend>Endereço</legend>
-            <label for="endereco">Rua / Avenida:</label>
+        <h3 class="h3-2">Informações de Entrega</h3>
+        <form class="local" action="processar_entrega.html" method="post">
+          <fieldset class="fundo-endereço">
+            <legend class="endereco">Endereço</legend>
+            <label class="endereco-barra" for="endereco">Rua / Avenida:</label>
             <input type="text" id="endereco" name="endereco" required /><br /><br />
             <label for="cidade">Cidade:</label>
             <input type="text" id="cidade" name="cidade" required /><br /><br />
-            <label for="cep-body">CEP:</label>
+            <label class="cep2" for="cep-body">CEP:</label>
             <input
               type="text"
               id="cep-body"
@@ -150,18 +154,17 @@
               maxlength="9"
               inputmode="numeric"
             />
-            <small>Formato: 00000-000</small><br /><br />
-            <input type="submit" value="Salvar Informações de Entrega" />
+            <small class="ajuda">Formato: 00000-000</small><br /><br />
+            <input class="botao-salvar" type="submit" value="Salvar Informações de Entrega" />
           </fieldset>
         </form>
       </section>
-      <a href="../index.html">Voltar para a loja</a>
+      <a class="botao-voltar" href="../index.html">Voltar para a loja</a>
     </main>
     <hr />
-    <footer>
-      <!--BARRA FINAL-->
-      <nav aria-label="Navegação do rodapé">
-        <ul>
+    <footer class="baixo">
+      <nav class="nav-baixo" aria-label="Navegação do rodapé">
+        <ul class="menu-baixo">
           <li><a href="../index.html">Página Inicial</a></li>
           <li><a href="termos_condicoes.html">Termos e condições</a></li>
           <li><a href="contato.html" target="_blank" rel="noopener noreferrer">Contato</a></li>
@@ -174,7 +177,7 @@
           </li>
         </ul>
       </nav>
-      <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+      <p class="final">&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
     </footer>
 
     <div vw class="enabled">
