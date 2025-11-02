@@ -4,6 +4,9 @@
 *{
     background-color: #ffffff;
 }
+p   {
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
 a   {
     text-decoration: none;
     color: black;
