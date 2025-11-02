@@ -1,26 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: JetBrains Mono, Consolas, 'Courier New', monospace;
+  font-family: 'Montserrat', 'Bebas Neue', 'Oswald', sans-serif;
 }
 
 body {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #f7f7f7;
+  color: #222;
   line-height: 1.85;
   font-size: 1rem;
 }
 
 /*CIMA*/
 header.cima {
-  background-color: #1f1f1f;
-  color: #e0e0e0;
-  padding: auto;
+  background-color: #ffffff;
+  color: #222;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header.cima .logo img {
@@ -36,7 +40,7 @@ header.cima nav ul.menu-cima {
 }
 
 header.cima nav ul.menu-cima li a {
-  color: #e0e0e0;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
@@ -56,9 +60,10 @@ main {
 
 .carrinho {
   flex: 2 1 60%;
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   padding: 1rem;
   border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .fundo-tabela {
@@ -72,14 +77,14 @@ table {
 
 table th,
 table td {
-  border: 1px solid #333;
+  border: 1px solid #ccc;
   padding: 0.5rem;
   text-align: center;
-  color: #e0e0e0;
+  color: #222;
 }
 
 table th {
-  background-color: #2c2c2c;
+  background-color: #f1f1f1;
 }
 
 table img {
@@ -87,13 +92,14 @@ table img {
   height: auto;
 }
 
-/* RESUMO DA COMPRA N SEI FAZER A RESPOSIVIDADE ESTOU ESTUDANDO */
+/* RESUMO DA COMPRA */
 aside.de-lado {
   flex: 1 1 35%;
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   padding: 1rem;
   border-radius: 0.5rem;
   height: fit-content;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 aside.de-lado dl dt {
@@ -104,7 +110,7 @@ aside.de-lado dl dd {
   margin-bottom: 0.5rem;
 }
 
-/* BOTÕES DO CARRINHO TA COLADO QND VAI PRA CELULARR PRECISO ARRUMAR */
+/* BOTÕES */
 .botao-comprar,
 .botao-limpar,
 .continuar {
@@ -121,57 +127,54 @@ aside.de-lado dl dd {
 }
 
 .botao-comprar {
-  background-color: #444;
-  color: #e0e0e0;
+  background-color: #0078d7;
+  color: #fff;
 }
 .botao-comprar:hover {
-  background-color: #1e3f6e;
+  background-color: #005fa3;
 }
 
 .botao-limpar {
-  background-color: #333;
-  color: #e0e0e0;
+  background-color: #ccc;
+  color: #222;
 }
 .botao-limpar:hover {
-  background-color: #771e1e;
+  background-color: #999;
 }
 
 .continuar {
-  background-color: #2c2c2c;
-  color: #e0e0e0;
+  background-color: #e6e6e6;
+  color: #222;
 }
 .continuar:hover {
-  background-color: #2d664c;
+  background-color: #c8e6c9;
 }
 
-section form.local input[type='submit'][value='Salvar Informações de Entrega']:hover {
-  background-color: #1e3f6e;
-}
-/* FORMULÁRIO DE ENDEREÇO  */
+/* FORMULÁRIO DE ENDEREÇO */
 section form.local {
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   padding: 2rem;
-  margin: 1px;
   border-radius: 0.5rem;
   margin-top: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-/*USEI CHAT NESSE FORM*/
+
 section form.local input[type='text'],
 section form.local input[type='number'] {
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.3rem;
   margin-bottom: 0.8rem;
-  border: 1px solid #444;
+  border: 1px solid #ccc;
   border-radius: 0.3rem;
-  background-color: #2c2c2c;
-  color: #e0e0e0;
+  background-color: #f9f9f9;
+  color: #222;
   font-size: 1rem;
 }
-/*USEI CHAT NESSE FORM*/
+
 section form.local input[type='submit'] {
-  background-color: #444;
-  color: #e0e0e0;
+  background-color: #0078d7;
+  color: #fff;
   padding: 0.8rem;
   width: 100%;
   border: none;
@@ -179,31 +182,32 @@ section form.local input[type='submit'] {
   cursor: pointer;
   font-size: 1rem;
 }
-/*USEI CHAT NESSE FORM MAS ENTENDI COM FUNCIONA ELE SELECIONA OS COISNHA DENTRO DA CAIXINHA QND VC COLOCA OU ESCREVE*/
+
 section form.local input[type='submit']:hover {
-  background-color: #555;
+  background-color: #005fa3;
 }
 
-/* BOTÃO VOLTAR PRECISO ARRUMAR TA QUADRADAO IMENSO */
+/* BOTÃO VOLTAR */
 .botao-voltar {
   display: flex;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
-  background-color: #2c2c2c;
-  color: #e0e0e0;
+  background-color: #f1f1f1;
+  color: #222;
   text-decoration: none;
   border-radius: 0.3rem;
 }
 
 .botao-voltar:hover {
-  background-color: #438ea5;
+  background-color: #cce0f5;
 }
 
 /* FINAL */
 footer.baixo {
-  background-color: #1f1f1f;
-  color: #e0e0e0;
+  background-color: #ffffff;
+  color: #222;
   padding: 1rem 2%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer.baixo ul.menu-baixo {
@@ -215,7 +219,7 @@ footer.baixo ul.menu-baixo {
 }
 
 footer.baixo ul.menu-baixo li a {
-  color: #e0e0e0;
+  color: #222;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -225,13 +229,13 @@ footer.baixo ul.menu-baixo li a:hover {
 }
 
 fieldset {
-  border: 1px solid #444;
+  border: 1px solid #ccc;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
 }
 
-/* RESPONSIVIDADE TOTAL USEI CHATGPT PQ N SEI FAZER ISSO AINDA */
+/* RESPONSIVIDADE */
 @media (max-width: 1024px) {
   main {
     flex-direction: column;
@@ -240,11 +244,7 @@ fieldset {
   aside.de-lado {
     order: -1;
     width: 100%;
-  }
-  aside.de-lado {
-    order: -1;
-    width: 100%;
-    margin-bottom: 1rem; /* separa do carrinho */
+    margin-bottom: 1rem;
   }
 }
 
@@ -266,7 +266,7 @@ fieldset {
     font-size: 0.9rem;
   }
 }
-/*TENTEI FAZER SOZINHO SEM CHAT*/
+
 @media (max-width: 480px) {
   body {
     font-size: 0.9rem;

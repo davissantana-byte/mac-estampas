@@ -222,3 +222,69 @@ figure figcaption small {
     align-items: center;
     text-align: center;
 }
+
+@media (max-width: 992px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+        margin-left: 0; 
+        margin-top: 10px; 
+        height: auto;
+    }
+
+    header a img {
+        display: block;
+        margin: 10px auto; 
+    }
+    
+    .conteudos-principais {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+        height: auto;
+    }
+    
+    .acessibilidade1, .acessibilidade2 {
+        height: auto; 
+        width: 100%;
+        font-size: 18px; 
+    }
+    
+    .compatibilidade, .navegacao, .alternativo, .responsivo, .transcricoes {
+        font-size: 16px;
+        height: auto;
+    }
+
+    .conteudo-secundario {
+        width: 95%; 
+        margin-top: 20px; 
+        margin-left: 2.5%; 
+    }
+    
+    .nome, .email, .mensagem {
+        margin: 20px 10px;
+        font-size: 16px;
+    }
+
+    #email, #mensagem {
+        width: 90%; 
+    }
+    
+    .principais {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 576px) {
+    .menu {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
+
+    .menu div p a {
+        font-size: 16px;
+    }
+    
+    .principais {
+        grid-template-columns: 1fr;
+    }
+}

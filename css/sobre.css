@@ -182,3 +182,80 @@ footer .pbaixo nav p a:hover {
     background-color: #0056b3; 
     box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
 }
+
+@media (max-width: 768px) {
+    .cabecalho img {
+        display: block;
+        margin: 10px auto;
+        width: 70px;
+    }
+
+    .pcima {
+        
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px;
+        margin-left: 0; 
+        margin-top: 10px; 
+        height: auto;
+    }
+
+    .pcima div p a {
+        font-size: 14px;
+    }
+    
+    .conteudo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    section h1 {
+        font-size: 35px;
+        text-align: center; 
+    }
+    
+    .macestampas {
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .secao {
+        flex-direction: column; 
+        flex-wrap: nowrap;
+    }
+
+    .secao article {
+        min-width: 100%; 
+    }
+
+    .pbaixo {
+        grid-template-columns: repeat(2, 1fr); 
+        padding: 0 10px;
+    }
+    
+    .outros {
+        font-size: 14px;
+    }
+
+    .desenvolvedores {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .pcima {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .pbaixo {
+        grid-template-columns: 1fr;
+    }
+    
+    .produtos a {
+        display: block; 
+        margin: 10px;
+    }
+}
