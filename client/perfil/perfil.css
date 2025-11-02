@@ -1,18 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
-    background-color: #E6E6E6;
+    background-color: #ffffff;
+}
+a   {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .perfil-do-usuario {
     display: flex;
     align-items: center;
     gap: 30px;
     padding: 20px;
-    border: 2px solid #a09e9e;
+    border: 2px solid #e6e6e6;
     border-radius: 30px;
 }
 
 .perfil-do-usuario img {
     border-radius: 50%;
-    box-shadow: 10px 10px 10px gray;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 79%);
 }
 
 .menu-card-visual {
@@ -21,14 +29,14 @@
     padding: auto;
     align-items: center;
     gap: 15px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 300px;
     height: 400px;
-    box-shadow: 10px 10px 10px gray;
+    box-shadow: 10px 10px 10px #e6e6e6;
     cursor: pointer;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .menu-card-visual h1{
@@ -52,17 +60,31 @@
 }
 
 fieldset{
-    border: solid 2px #a09e9e;
+    border: solid 2px #e6e6e6;
     border-radius: 30px;
 }
 
 .menu-card-visual:hover {
     transform: translateY(25px); 
-    box-shadow: 10px 10px 10px rgb(56, 56, 56); 
+    box-shadow: 5px 5px 5px hsl(0, 0%, 79%); 
 }
 
 .cardlink{
     color: black;
     text-decoration: none;
 }
-
+footer .principais nav {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
+.outros {    
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
