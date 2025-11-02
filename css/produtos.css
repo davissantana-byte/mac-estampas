@@ -32,19 +32,16 @@ main {
     margin-top: -125px;
     justify-content: center;
 }
-
 .menu > div {
     text-align: center;
     padding-top: 20px;
 }
-
 .menu div p a {
     text-decoration: none;
     font-size: 18px;
     color: black;
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
-
 .menu div p a:hover {
     border-bottom: 2px solid;
 }
