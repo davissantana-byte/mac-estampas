@@ -1,4 +1,7 @@
 function calculaResultado(){ /*Botão 'pagar'*/
+    const form = document.getElementById('formPagamento');
+
+    if( form.reportValidity()){ /* verifiaca se os campos estão preenchidos*/
 
 Swal.fire({
     title: 'Compra concluida!',
@@ -7,6 +10,7 @@ Swal.fire({
     confirmButtonText: 'OK',
     allowOutsideClick: false,
 })
+}
 
 }
 function calculaChave(){ /*Botão 'copiar chave pix'*/
@@ -26,4 +30,19 @@ function calculaBoleto(){ /*Botão 'gerar boleto'*/
         allowOutsideClick: false,
     })
 
+}
+
+function calculaEndereco(){ /*Botão 'salvar endereço'*/
+    const form = document.getElementById('formEndereco');
+
+    if (form.reportValidity()){/* verifiaca se os campos estão preenchidos*/
+
+    
+    Swal.fire({
+        title: 'Endereço salvo!',
+        text: 'Seu endereço foi salvo com sucesso.',
+        icon: 'success',
+        allowOutsideClick: false,
+    })
+}
 }
