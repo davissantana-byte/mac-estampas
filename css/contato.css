@@ -197,7 +197,6 @@ body {
   border-bottom: 2px solid #3498db;
 }
 
-/* chatgptttttttttttttttttttttttt */
 @media (max-width: 1000px) {
   .info {
     grid-template-columns: 1fr 1fr;
@@ -213,7 +212,7 @@ body {
   }
   .contato {
     grid-template-columns: 1fr;
-  } /* empilha imagem e form */
+  }
   .form {
     order: 2;
   }
@@ -231,7 +230,7 @@ body {
   }
   .menu {
     display: none;
-  } /* opcional: esconde menu em mobile */
+  }
   .mapa iframe {
     height: 240px;
   }

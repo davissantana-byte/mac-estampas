@@ -15,8 +15,6 @@ body {
   line-height: 1.85;
   font-size: 1rem;
 }
-
-/*CIMA*/
 header.cima {
   background-color: #ffffff;
   color: #222;
@@ -50,7 +48,6 @@ header.cima nav ul.menu-cima li a:hover {
   text-decoration: underline;
 }
 
-/* CARRINHO */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -92,7 +89,6 @@ table img {
   height: auto;
 }
 
-/* RESUMO DA COMPRA */
 aside.de-lado {
   flex: 1 1 35%;
   background-color: #ffffff;
@@ -110,7 +106,6 @@ aside.de-lado dl dd {
   margin-bottom: 0.5rem;
 }
 
-/* BOTÕES */
 .botao-comprar,
 .botao-limpar,
 .continuar {
@@ -150,7 +145,6 @@ aside.de-lado dl dd {
   background-color: #c8e6c9;
 }
 
-/* FORMULÁRIO DE ENDEREÇO */
 section form.local {
   background-color: #ffffff;
   padding: 2rem;
@@ -187,7 +181,6 @@ section form.local input[type='submit']:hover {
   background-color: #005fa3;
 }
 
-/* BOTÃO VOLTAR */
 .botao-voltar {
   display: flex;
   margin-top: 1rem;
@@ -202,7 +195,6 @@ section form.local input[type='submit']:hover {
   background-color: #cce0f5;
 }
 
-/* FINAL */
 footer.baixo {
   background-color: #ffffff;
   color: #222;
@@ -235,7 +227,6 @@ fieldset {
   border-radius: 0.5rem;
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 1024px) {
   main {
     flex-direction: column;
