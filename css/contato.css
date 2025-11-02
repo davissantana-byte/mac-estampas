@@ -1,6 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+header a img {
+    margin: 20px;
+}
+
+.pcima {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(6, 2fr);
+    text-align: center;
+    margin-left: 140px;
+    height: 100px;
+    margin-top: -125px;
+    justify-content: center;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
+
+.pcima div {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.pcima div p a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.pcima div p a:hover {
+    border-bottom: 2px solid;
+}
+
+.pcima img {
+    margin-top: -7px;
+    width: 65px;
+}
+
+
+.pbaixo {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer .pbaixo nav {
+    font-size: 18px;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
+
+footer .pbaixo nav p a {
+    color: black;         
+    text-decoration: none; 
+}
+
+footer .pbaixo nav p a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+
+
+.outros {
+    text-align: center;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,48 +76,6 @@ body {
   margin: 0;
   color: #2c3e50;
   background: #fff;
-}
-
-.cabecalho {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding: 10px 20px;
-  column-gap: 40px;
-  font-family: 'Montserrat', 'Bebas Neue', 'Oswald', sans-serif;
-}
-
-.cabecalho a img {
-  width: 100px;
-  height: auto;
-  margin: 0 20px 0 0;
-}
-
-.pcima {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.pcima div {
-  text-align: center;
-  padding-top: 10px;
-}
-
-.pcima div p a {
-  text-decoration: none;
-  color: #000;
-  transition: all 0.3s;
-}
-
-.pcima div p a:hover {
-  border-bottom: 2px solid #3498db;
-}
-
-.pcima img {
-  margin-top: -5px;
 }
 
 @media (max-width: 1000px) {
