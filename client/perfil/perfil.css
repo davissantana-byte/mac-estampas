@@ -73,18 +73,33 @@ fieldset{
     color: black;
     text-decoration: none;
 }
+.principais {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.principais nav p a:hover {
+    border-bottom: 2px solid;
+}
+
 footer .principais nav {
     text-decoration: none;
     font-size: 18px;
     color: black;
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
-.outros {    
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 18px;
-    color: black;
+
+nav p a {
+    text-decoration: none; 
+    color: black;  
+}
+
+.outros {
+    text-align: center;
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+    margin: 30px;
 }
