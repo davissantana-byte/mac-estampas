@@ -191,3 +191,101 @@ nav p a {
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
     margin: 30px;
 }
+
+@media (max-width: 768px) {
+    
+    
+  .cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  header a img {
+    margin: 10px auto;
+    width: 80px; 
+  }
+
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 0; 
+    margin-top: 10px; 
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .menu div p a {
+    font-size: 14px;
+  }
+    
+  .tituloinform {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .form-wrapper {
+    flex-direction: column; 
+    gap: 20px;
+    padding: 10px 0;
+  }
+
+  section.contato form {
+    width: 95%; 
+    max-width: 400px; 
+    margin: 0 auto;
+  }
+    
+  section.contato h2 {
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  section.contato input, section.contato textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .mapa {
+    padding: 10px;
+  }
+    
+  .mapa aside iframe {
+    height: 300px; 
+  }
+
+  .principais {
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 0 10px;
+  }
+    
+  footer .principais nav p a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    grid-template-columns: 1fr; 
+    gap: 8px;
+  }
+    
+  .menu div p a {
+    font-size: 16px;
+  }
+
+  section.contato form {
+    width: 100%; 
+    padding: 0 10px;
+  }
+
+  .principais {
+    grid-template-columns: 1fr;
+  }
+    
+  .outros {
+    margin: 20px 10px;
+    font-size: 0.8em;
+  }
+}
