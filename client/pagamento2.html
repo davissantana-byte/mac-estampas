@@ -10,64 +10,40 @@
     <header>
         <a href="../index.html"><img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100"></a>
     
-        <nav>
+        <nav class="menu">
             <p><a href="../index.html">Página Inicial</a></p>
             <p><a href="perfil/perfil.html">Seu perfil</a></p>
             <p><a href="carrinho-mercadoria.html">Minhas compras</a></p>
         </nav>
     </header>
+<br>
+    <body>
 
-    <hr>
-
-    <main style="text-align: center;">
-        
-        <section>
-            <h2>Adicionar Endereço</h2>
-
-            <form action="processar_endereco.php" method="post">
-                <fieldset>
-                    <legend>Informações de Entrega</legend>
-                    
-                    <label for="pais">País/Região:</label><br>
-                    <input type="text" id="pais" name="pais" required><br><br>
-
-                    <label for="nome">Nome:</label><br>
-                    <input type="text" id="nome" name="nome" required><br><br>
-
-                    <label for="sobrenome">Sobrenome:</label><br>
-                    <input type="text" id="sobrenome" name="sobrenome" required><br><br>
-
-                    <label for="telefone">Telefone:</label><br>
-                    <input type="tel" id="telefone" name="telefone" required><br><br>
-
-                    <label for="cep">CEP:</label><br>
-                    <input type="text" id="cep" name="cep" required><br><br>
-
-                    <label for="endereco">Endereço:</label><br>
-                    <input type="text" id="endereco" name="endereco" required><br><br>
-
-                    <label for="numero">Número da residência:</label><br>
-                    <input type="text" id="numero" name="numero" required><br><br>
-
-                    <label for="bairro">Bairro:</label><br>
-                    <input type="text" id="bairro" name="bairro" required><br><br>
-
-                    <label for="cidade">Cidade:</label><br>
-                    <input type="text" id="cidade" name="cidade" required><br><br>
-                </fieldset>
-                
-                <button type="submit">Salvar Endereço</button>
-            </form>
-
-            <br><br>
-            <p><a href="segunda.html"> Formas de Pagamento</a></p>
+    <div class="container">
+        <section class="mapa">
+            <h2>Onde Estamos</h2>
+            <p>Este é o nosso principal ponto de retirada.</p>
+            
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4407052214656!2d-46.55033889124573!3d-23.58852261818993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5dad0f222e31%3A0x5cc41a4925276c95!2sR.%20Jo%C3%A3o%20Vidal%20de%20Siqueira%2C%2039%20-%20Jardim%20Teresa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003261-050!5e0!3m2!1spt-BR!2sbr!4v1758410471952!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="500"
+            loading="lazy"
+            allowfullscreen
+        >
+        </iframe>
         </section>
 
-    </main>
+        <a href="javascript:history.back()" class="voltar-link">Voltar</a>
+    </div>
 
-    <hr>
+</body>
+
+</html>
+<br>
 
     <footer>
+    <div class="principais">
         <nav>
             <p><a href="../index.html">Página Inicial</a></p>
         </nav>
@@ -83,15 +59,15 @@
         <nav>
             <p><a href="suporte.html" target="_blank">Suporte</a></p>
         </nav>
-        <nav>
-            <p><a href="acessibilidade.html" target="_blank">Acessibilidade</a></p>
-        </nav>
-        
-        <address>
-            Dúvidas sobre o pedido? Acesse <a href="suporte.html">Suporte</a>.
-        </address>
+    
+    </div>
 
+    <div class="outros2">
+        <address>
+            Para dúvidas ou contato, visite nossa <a href="client/contato.html">página de contato</a>.
+         </address>
         <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+    </div>
     </footer>
 
     <div vw class="enabled">
