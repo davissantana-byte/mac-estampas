@@ -17,37 +17,40 @@ body {
 }
 
 /*CIMA*/
-header.cima {
-  background-color: #ffffff;
-  color: #222;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+header a img {
+    margin: 20px;
 }
 
-header.cima .logo img {
-  max-width: 120%;
-  height: auto;
+.pcima {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(6, 2fr);
+    text-align: center;
+    margin-left: 140px;
+    height: 100px;
+    margin-top: -125px;
+    justify-content: center;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
 
-header.cima nav ul.menu-cima {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+.pcima div {
+    text-align: center;
+    padding-top: 20px;
 }
 
-header.cima nav ul.menu-cima li a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
+.pcima div p a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
 }
 
-header.cima nav ul.menu-cima li a:hover {
-  text-decoration: underline;
+.pcima div p a:hover {
+    border-bottom: 2px solid;
+}
+
+.pcima img {
+    margin-top: -7px;
 }
 
 /* CARRINHO */
@@ -203,30 +206,6 @@ section form.local input[type='submit']:hover {
 }
 
 /* FINAL */
-footer.baixo {
-  background-color: #ffffff;
-  color: #222;
-  padding: 1rem 2%;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer.baixo ul.menu-baixo {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-footer.baixo ul.menu-baixo li a {
-  color: #222;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-footer.baixo ul.menu-baixo li a:hover {
-  text-decoration: underline;
-}
 
 fieldset {
   border: 1px solid #ccc;
@@ -234,6 +213,38 @@ fieldset {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
 }
+
+.pbaixo {
+    display: grid;
+    margin-top: 10px;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer .pbaixo nav {
+    font-size: 18px;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
+
+footer .pbaixo nav p a {
+    color: black;         
+    text-decoration: none; 
+    
+}
+
+footer .pbaixo nav p a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid
+}
+
+
+.outros {
+    text-align: center;
+    font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
+}
+
 
 /* RESPONSIVIDADE */
 @media (max-width: 1024px) {

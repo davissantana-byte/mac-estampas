@@ -45,6 +45,18 @@ O projeto é organizado com a página principal (`index.html`) e uma pasta dedic
 | `docs/Documentação - Orçamento.docx` | Documento simulando uma hospedagem para nosso site. |
 | `docs/MacEstampas - Diário de Bordo` | Documentação sobre nossos passos dia após dia, documentando nossas dúvidas e alterações de acordo com os commits. |
 
+## Responsáveis pelo projeto
+
+* **Davi de Santana:** Index e Produtos
+* **Erick Rosa:** Pagamento
+* **Rogério:** Categorias
+* **Luiz Enrique:** Suporte
+* **Luis Henrique:** Termos e Condições
+* **Heitor:** Carrinho Mercadoria
+* **Gustavo:** Contato
+* **Gabriel:** Sobre
+* **Vinicius:** Cadastro e Login
+* **José:** Perfil
 
 ## ♿ Acessibilidade e VLibras
 

@@ -11,44 +11,30 @@
   </head>
 
   <body>
-    <header class="cima">
-      <a class="logo" aria-label="logo da macestampas" href="../index.html">
-        <img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100" />
-      </a>
-      <details class="cep-cima">
-        <summary class="summary" aria-label="Informe seu CEP">Informe seu CEP</summary>
-        <form class="form-cima" action="#" method="post">
-          <label for="cep-header">CEP:</label>
-          <input
-            type="text"
-            name="cep"
-            id="cep-header"
-            required
-            placeholder="00000-000"
-            title="Formato: 00000-000"
-            pattern="[0-9]{5}-[0-9]{3}"
-            maxlength="9"
-            inputmode="numeric"
-          />
-          <button type="submit">OK</button>
-        </form>
-      </details>
-      <nav class="nav-cima" aria-label="Navegação principal">
-        <ul class="menu-cima">
-          <li class="esquerda"><a href="../index.html">Página Inicial</a></li>
-          <li class="esquerda"><a href="produtos.html">Categoria</a></li>
-          <li class="esquerda"><a href="suporte.html">Suporte</a></li>
-          <li class="separado">
-            <a href="login-cadastro/login.html" target="_blank" rel="noopener noreferrer">Entre</a>
-          </li>
-          <li class="separado"><a href="login-cadastro/cadastro.html">Crie a sua conta</a></li>
-          <li class="bola-do-perfil">
-            <a href="perfil/perfil.html">
-              <img src="../assets/perfil/fotodeusuario.png" alt="foto de perfil" width="30" />
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <header class="cabecalho">
+        <a href="../index.html"><img src="../assets/icons/logo.jpg" alt="Logo MacEstampas" width="100" height=""></a>
+
+        <nav class="pcima">
+            <div>
+                <p><a href="../index.html">Inicio</a></p>
+            </div>
+            <div>
+                <p><a href="contato.html" >Contato</a></p>
+            </div>
+            <div>
+                <p><a href="login-cadastro/cadastro.html">Crie a sua conta</a></p>
+            </div>
+            <div>
+                <p><a href="login-cadastro/login.html">Entre</a></p>
+            </div>
+            <div>
+                <p><a href="produtos.html">Categorias</a></p>
+            </div>
+            <div>
+                <p><a href="perfil/perfil.html">Seu perfil</a></p>
+            </div>
+        </nav>
+
     </header>
     <hr />
     <main>
@@ -164,22 +150,33 @@
       <a class="botao-voltar" href="../index.html">Voltar para a loja</a>
     </main>
     <hr />
-    <footer class="baixo">
-      <nav class="nav-baixo" aria-label="Navegação do rodapé">
-        <ul class="menu-baixo">
-          <li><a href="../index.html">Página Inicial</a></li>
-          <li><a href="termos_condicoes.html">Termos e condições</a></li>
-          <li><a href="contato.html" target="_blank" rel="noopener noreferrer">Contato</a></li>
-          <li><a href="sobre.html" target="_blank" rel="noopener noreferrer">Sobre</a></li>
-          <li><a href="suporte.html" target="_blank" rel="noopener noreferrer">Suporte</a></li>
-          <li>
-            <a href="acessibilidade.html" target="_blank" rel="noopener noreferrer"
-              >Acessibilidade</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <p class="final">&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+
+    <footer>
+            <div class="pbaixo">
+          <nav>
+            <p><a href="../index.html">Página Inicial</a></p>
+            </nav>
+          <nav>
+              <p><a href="contato.html">Contato</a></p>
+          </nav>
+          <nav>
+              <p><a href="acessibilidade.html">Acessibilidade</a></p>
+          </nav>
+          <nav>
+                <p><a href="termos_condicoes.html">Termos e Condições</a></p>
+          </nav>
+          <nav>
+                <p><a href="suporte.html">Suporte</a></p>
+          </nav>
+      </div>
+
+        <div class="outros">
+            <address>
+                Para dúvidas ou contato, visite nossa <a href="../client/contato.html">página de contato</a>.
+            </address>
+            
+            <p>&copy; 2025 MacEstampas. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <div vw class="enabled">

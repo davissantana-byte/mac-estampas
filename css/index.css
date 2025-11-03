@@ -263,6 +263,7 @@ nav p a {
 .categoria-10 figure:hover {
     transform: scale(1.1);
 }
+
 .categoria-10 figure * {
     margin: 0;
     padding: 0;

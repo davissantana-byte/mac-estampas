@@ -74,40 +74,6 @@ nav p a {
     font-family: 'Montserrat', 'Bebas Neue', 'Oswald';
 }
 
-/*
-.menu {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(5, 1fr);
-    text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    border: 1px solid #333; 
-    border-radius: 5px; 
-    text-decoration: none; 
-    color: #000000;
-    padding-top: 10px;
-    background-image:linear-gradient(to right, white, rgb(212, 225, 250));
-}
-.menu a {
-    text-decoration: none;
-    color: #000000;
-}
-.menu a:hover {
-    border-bottom: 2px solid;
-    font-size: 33px;
-    transition-duration: 0.5s;
-    text-decoration: none;
-    color: rgb(201, 86, 86);
-}
-footer a{
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-*/
 .final {
     display: grid;
     gap: 5px;
